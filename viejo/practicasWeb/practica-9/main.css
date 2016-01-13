@@ -1,0 +1,303 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+	background-color: #192538;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+footer {
+	background-color: #192538;
+	color: #FFFFFF;
+	height: 400px;
+	text-transform: uppercase;
+	line-height: 1.4em;
+}
+h2 {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	text-align: center;
+}
+h3 {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000000;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.4em;
+}
+
+
+p {
+	line-height: 25px;
+}
+
+
+body {
+	background-image: url(img/IMG_7834_crop.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-size: cover;
+}
+
+
+header img {
+	max-height: 100px;
+	max-width: 129px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+
+nav a {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 2em;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+}
+nav a:hover {
+	color: #EAE026;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+
+nav li {
+	display: inline-block;
+	margin-left: 20px;
+	float: right;
+	margin-top: 45px;
+}
+
+
+.clear {
+	clear: both;
+}
+.flotarIzq {
+	float: left;
+}
+aside {
+	float: left;
+	width: 30%;
+}
+aside p {
+	line-height: 30px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+#contacto {
+	background-color: #FFFFFF;
+	margin-top: 150px;
+}
+legend {
+	text-indent: -9999px;
+}
+
+
+
+.container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flotarDcha {
+	float: right;
+	width: 53%;
+}
+.flotarDchCentrado {
+	float: right;
+	width: 50%;
+	margin-top: 50px;
+	text-align: center;
+}
+.iframe {
+	float: left;
+	width: 45%;
+	margin-top: 50px;
+}
+#bloque2 {
+	padding-top: 40px;
+}
+
+
+#separacion {
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	height: 540px;
+	padding-right: 30px;
+}
+.cursiva {
+	font-style: italic;
+	margin-top: 45px;
+}
+tel {
+	color: #333333;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+address {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333333;
+	font-variant: small-caps;
+	font-style: normal;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	line-height: 30px;
+}
+.amarillo {
+	color: #E1E100;
+}
+#pie {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.centrarPie {
+	text-align: center;
+	padding: 30px;
+}
+
+#flotarIpie {
+	float: left;
+	margin-top: 50px;
+}
+
+
+#flotarDpie {
+	float: right;
+	margin-top: 50px;
+}
+
+#flotarDpie li {
+	display: inline;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#flotarDpie a {
+	display: inline;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+input {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #F2F2F2;
+	border: 0 none;
+	border: 1px solid #CCC;
+}
+input:hover {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #FFFFFF;
+	border: 0 none;
+	border: 1px solid #CCC;
+	color: #000000;
+}
+label {
+	display: block;
+}
+
+fieldset input {
+	width: 37%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+fieldset input:hover {
+	width: 37%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #000000;
+	background-color: #FFFFFF;
+}
+
+
+fieldset label {
+	display: inline;
+}
+input[type="submit"] {
+	width: 20%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	color: #FFFFFF;
+	background-color: #000000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+textarea {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #F2F2F2;
+	resize:vertical;
+    overflow:auto;
+}
+textarea:hover {
+	width: 100%;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #FFFFFF;
+	color: #000000;
+	
+}
+
+input , textarea:focus{
+	outline: 1px;
+}
+label[for="name"]:after{
+	content:"*";
+}
+
+label[for="email"]:after{
+	content:"*";
+}
+
+label[for="subject"]:after{
+	content:"*";
+}
+label[for="message"]:after{
+	content:"*";
+}
+
+.fa-inverse{
+	color: #192538;
+}
+footer a{
+	color: #e1cf41 !important;
+}
+footer ul a span{
+	display: none;
+}
+footer ul a span.fa-stack{
+	display: inline-block;
+}
+ #map-canvas {
+       height: 400px;
+       width: 400px;
+}

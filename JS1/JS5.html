@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#mundo").click(function(){
+            alert("Hola Mundo");
+        });
+        $("#todos").click(function(){
+            alert("Hola a todos");
+        });
+            
+        $("#no_tocar").click(function(){
+            $("form").hide();
+            var url = 'https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg';
+            $("body").html("<img src=\"https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg\">"); 
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <input type="button" id="mundo" value="mundo"><br>
+        <input type="button" id="todos" value="todos"><br>
+        <input type="button" id="no_tocar" value="no tocar">
+    </form>
+    </pre>
+
+</body>
+</html>

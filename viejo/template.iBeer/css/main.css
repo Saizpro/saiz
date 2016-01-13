@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+label{
+	color: #BF9A2A;
+	font-size: 15px;
+	line-height: 35px;
+	text-transform: uppercase;
+}
+textarea{
+	 resize:none;
+	
+}
+#what h2{
+	color: #3a3a3a;
+  font-weight: normal;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+
+
+.ibeer h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+.what h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+#recetas h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;;
+}
+
+.bloque{
+	border: 1px solid #999;
+	  height: 80px;
+	  border-radius: 4px;
+	  padding: 8px;
+}
+
+.tecnicas h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+.funcionamiento h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+#about h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+.contact h1{
+	color: #595959;
+  border-bottom-width: medium;
+  border-bottom-style: solid;
+  border-bottom-color: #547346;
+  text-align: left;
+}
+.img1{
+	min-height: 450px;
+	background: transparent;
+	text-aling: center;
+	vertical-align: middle;
+	padding-top: 20px;
+}
+footer{
+	color: #595959;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: ##BF9A2A;
+	background-color:##BF9A2A;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 5px;
+}
+.navbar-header img{
+	margin-top: -10px;
+}
+
+#ibeer .fa:hover {
+  color: #ee3733;
+  cursor:pointer;
+}
+.img-center {
+	margin: 0 auto;
+}
+#about img{
+	border-radius: 50%;
+}
+footer{
+	background-color: #BF9A2A;
+}
+nav .active a {
+	color: #fff;
+}
+
+#ibeer li{
+	text-aling: center !important;
+}
+
+#what .fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 3em !important;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+  color: #547346;
+  width: 1.5em;
+  height: 1.5em;
+  padding-top: .25em;
+  /* padding-left: -0.7em; */
+  border-radius: 50%;
+  border: 1px solid #547346;
+  margin-bottom: .2em;
+  margin-right: .5em;
+  margin-top: 1em;
+}
+#what img {
+  padding-bottom:60px;
+  border-bottom: 1px solid #000;
+}
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+  background-color: #BF9A2A;
+  border-color: #BF9A2A;
+}
+.panel-default>.panel-heading {
+  color: #333;
+  background-color: #BF9A2A;
+  border: 3px solid #547346;
+}
+#about h2{
+	color: #3a3a3a;
+  font-weight: normal;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}

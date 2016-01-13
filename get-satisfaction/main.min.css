@@ -1,0 +1,14 @@
+@charset "utf-8";body{font-family:Tahoma,Verdana,sans-serif;font-size:1em;background-color:#f4f5f7}p{margin-bottom:20px}a{color:#666;text-decoration:none}
+.logo{float:left;display:block;padding-top:43px}nav{float:right;font-size:1em;padding-top:20px;padding-bottom:20px;margin-bottom:3px;text-transform:uppercase;clear:right}
+nav ul li{margin-left:15px}nav ul li:hover{border-bottom:2px solid orange;padding-bottom:20px;margin-bottom:2px}.main-container{width:1170px;margin:0 auto;clear:both}
+.head-container{background-color:white}.head-container:after{content:" ";clear:both;display:table}.footer-container{background-color:#818590}
+.top-menu{text-align:right;float:right;text-transform:capitalize}.top-menu li{display:inline}.top-menu li a{font-size:.8em;color:#e0e0e0;padding-left:15px;padding-top:10px;padding-bottom:20px;display:inline-block}
+.top-menu li a:hover{color:black}.features{text-align:center}nav ul li{display:inline}footer ul{margin:2%;width:20%;display:inline-block}.none{display:none}
+.clear{clear:both}.tel{display:none}a[href^=tel]:hover>span{display:inline-block}.request{color:#fff;background-color:#f8b21f;border:1px solid #ff8310;text-transform:uppercase;background-image:-moz-linear-gradient(top,#ffc154,#e47601);background-image:-ms-linear-gradient(top,#ffc154,#e47601);background-image:-webkit-gradient(linear,0 0,0 100%,from(#ffc154),to(#e47601));background-image:-webkit-linear-gradient(top,#ffc154,#e47601);background-image:-o-linear-gradient(top,#ffc154,#e47601);background-image:linear-gradient(top,#ffc154,#e47601);padding:3px 10px 3px}
+strong{font-weight:normal}nav>ul li:last-child:hover{border-bottom:0}tr:nth-child(even){background-color:rgba(0,0,0,0.05)}tbody th[scope="col"]{text-transform:uppercase;font-weight:bolder}
+th{font-weight:normal}th[headers="cp"],th[headers="ue"],th[headers="oc"]{text-align:left}
+td,th{text-align:center;padding:10px 30px}td[headers="p"],td[headers="i"]{font-size:1.1em;font-weight:bolder}
+td[headers="p"] p,td[headers="i"] p{font-size:.9em;font-weight:normal}td[title="no"]{text-indent:-10000000000000000em}
+td[title="yes"]{background-image:url(icon-tick.png);background-repeat:no-repeat;background-position:center;text-indent:-10000000000000000em}
+#i,td[headers="i"]{background-color:#2980b9;color:white}td[headers="i"] a{color:white}
+#i,#p{text-transform:uppercase;font-weight:bolder}thead tr:first-child th:first-child{background-color:#f4f5f7}.col1{border-right:2px solid white}.col3{box-shadow:20px 0 10px -10px rgba(0,0,0,.15),-20px 0 10px -10px rgba(0,0,0,.15)}

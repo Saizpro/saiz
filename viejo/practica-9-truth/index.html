@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Truth Collective</title>
+
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+<script src="mapa.js"></script>
+</head>
+
+<body>
+<header>
+<img src="img/logo.png" alt="imagen decorativa">
+<nav>
+<ul>
+  <li><a href="#">Welcome</a></li>
+  <li><a href="#">Work</a></li>
+  <li><a href="#">Blog</a></li>
+  <li><a href="#">Press &amp; Articles</a></li>
+  <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+</header>
+<div></div>
+<article id="contacto">
+  <div class="container">
+  <div id="mapa">
+   <div id="map-canvas"></div>
+      <p class="centrar">Our space is conveniently located in the heart of downtown Rochester:</p>
+      <h1 class="centrar">Truth Collective<br>
+        12 Aqueduct street, 1st floor<br>
+      Rochester, NY 14614</h1>
+      <h2 class="centrar">+1.585.690.0844</h2>
+      <p class="centrar cursiva">Visitors to Truth Collective:<br>
+      Please call upon arrival so we can open the gate to our parking lot. If there are no available spaces, there is a pay lot next door (also accesible from Exchange Street). Additionally, there is on street parking on East Broad.</p>
+  </div>
+  <div id="anteform">
+    <p class="clear">We'd love to bear you if you are a prospective client, genuine talent looking to become part of the Collective, inquisitive member of the media, or just a long-lost friend.</p>
+    <h1>Collective Envy?</h1>
+    <p>If you think your standards and expertive will be a great fit with us, we'd love to hear from you. Just share a portfolio link and tell us the truths about you that will make us appreciate just how awesome you are.</p>
+    <p>Need to send an attachment? Email us directly to <a href="#">hello@truthcollective.com</a></p>
+  </div>
+  <form id="form1" name="form1" method="post" action="enviar-formulario.php">
+    <fieldset>
+      <legend>Name</legend>
+    <p id="pnombre">
+  
+      <input type="text" name="nombre" id="nombre" required>
+      <label for="nombre">First Name</label>
+    </p>
+    <p id="papellidos">
+       
+      <input type="text" name="apellidos" id="apellidos" required>
+      <label for="apellidos">Last Name</label>
+    </p>
+    </fieldset>
+    <p class="clear">
+      <label for="email">Email Adress</label>
+      <input type="email" name="email" id="email" required>
+      </p>
+    <p>
+      <label for="subject">Subject</label>
+      <input type="text" name="subject" id="subject" required>
+      </p>
+    <p>
+      <label for="mensaje">Message</label>
+      <textarea name="mensaje" id="mensaje" cols="45" rows="5" required></textarea>
+      </p>
+    <p>
+      <label for="telefono">Phone Number</label>
+      <input type="tel" name="telefono" id="telefono">
+      </p>
+    <p>
+      <label for="url">Website or Portfolio Link</label><br>
+      <span class="cursiva pequeña">(if applecable)</span> 
+      <input type="url" name="url" id="url" value="http://">
+      </p>
+    <p>
+      <label for="enviar">Submit</label>
+      <input type="submit" name="enviar" id="enviar" value="Submit">
+    </p>
+  </form>
+  
+  <div class="clear"></div>
+  </div>
+</article>
+<footer>
+  <div id="pie960">
+      <div class="get">
+        <hgroup id="hgroup1">
+          <h1>Get in touch</h1>
+    	  <h2>Bob Bailey +1.585.690.0844<br>
+    	    <a href="mailto:bob@truthcollective.com">bob@truthcollective.com</a></h2>
+      </hgroup>
+        <div class="stay">
+          <h1>Stay conected</h1>
+          <ul>
+            <li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+        	<li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+        	<li><a href="#"><i class="fa fa-youtube-play"></i><span>Youtube</span></a></li>
+        	<li><a href="#"><i class="fa fa-vimeo-square"></i><span>Vimeo</span></a></li>
+          	<li><a href="#"><i class="fa fa-linkedin"></i><span>Linkedin</span></a></li>
+          	<li><a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
+          </ul>
+        </div>
+    </div>
+    <hgroup id="hgroup2">
+   	  <h1>Come visit us</h1>
+    	<h2>12 aqueduct street / Rochester/ New York / 14614</h2>
+    </hgroup>
+    <p class="cursiva">©2013-2014 Truth Collective LLC</p>
+    <div class="clear"></div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body p:first-child{
+	width: 800px;
+	background-color: red;
+}
+body p:nth-child(2){
+	width: 800px;
+	background-color: green;
+	position: relative;
+	top: 150px;
+	left: 50px;
+	
+}
+body p:last-child{
+	width: 800px;
+	background-color: blue;
+}

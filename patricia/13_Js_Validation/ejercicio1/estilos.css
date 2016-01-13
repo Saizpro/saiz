@@ -1,0 +1,46 @@
+body{
+	background-color:#04B4AE;
+}
+#formVal{
+	width: 500px;
+	background-color:#CEF6EC;
+	margin: 50% auto;
+	text-align: center;
+	font-family: arial, verdana, sans-serif;
+}
+label{
+	width: 300px;
+	display: block;
+	margin: auto auto;
+	font-size: 15px;
+}
+input{
+	width: 300px;
+	
+}
+#formVal label {
+		width: 250px;
+	}
+#formVal label.error, #formVal input.submit {
+		color: #F00;
+		font-size: 12px;
+		font-style: italic;
+	}
+
+#centrar{
+	width: 500px;
+	margin:auto auto;
+	
+}
+fieldset{
+	
+	border-color:#0101DF;
+}
+#ok{
+	color: #FFF;
+	font-family: arial, verdana, sans-serif;
+	font-size: 22px;
+	text-align:center;
+	width: 300px;
+	margin:20% auto;
+}

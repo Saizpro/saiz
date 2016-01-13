@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script>
+
+  $(document).ready(function(){
+		
+	$('.pasos li').animate({
+		 'opacity':'1',
+		 'margin-left':'-5%',
+		 'border-spacing': '360'
+	},{
+    step: function(now,fx) {
+      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+      $(this).css('-moz-transform','rotate('+now+'deg)');
+      $(this).css('transform','rotate('+now+'deg)');
+    },
+	
+    duration: 1500
+	
+});
+
+$('#plan, #execute, #deliver').animate({
+		 'opacity':'1',
+		 'margin-left':'4%',
+		 
+	},{
+    step: function(now,fx) {
+      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+      $(this).css('-moz-transform','rotate('+now+'deg)');
+      $(this).css('transform','rotate('+now+'deg)');
+    },
+	
+    duration: 1500
+	
+});
+			
+	/*$( "#clickme" ).click(function() {
+	  $( "#book" ).animate({
+		opacity: 0.25,
+		left: "+=50",
+		height: "toggle"
+	  }, 5000, function() {
+		// Animation complete.
+	  });
+});	*/
+	});
+  </script>
+  
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <ol class="pasos">
+      <li title="Organize">Organize</li>
+      <li title="Plan">Plan</li>
+      <li title="Execute">Execute</li>
+      <li title="Deliver">Deliver</li>
+    </ol>
+    <div class="row service">
+      <div class="three columns">
+
+<h2>Organize</h2>
+
+<p>Every project we take on presents its own unique set of challenges. Understanding your brand objectives, target audience and expectations is paramount in building a successful website. We achieve this by truly getting to know your brand and your unique place within your industry.</p>
+</div>
+<div class="three columns">
+<h2>Plan</h2>
+
+<p>We spend a great deal of time considering organizational solutions for every piece of information learned. We ensure that all elements of a project are considered and implemented correctly through high-level site maps and in-depth information architecture.</p>
+</div>
+<div class="three columns">
+<h2>Execute</h2>
+
+<p>We tackle every project with a user-focused design approach. All decisions are tailored to the users' specific needs and digital environment as we bring your site to life. Our focus on creative design, usability and modern web standards sets us apart from your run-of-the-mill web shop.</p>
+</div>
+<div class="three columns">
+<h2>Deliver</h2>
+<p>
+Our custom-tailored content management system allows you to be as hands-on with your new website as you wish, but we'll be here as an ongoing resource for any updates or support you might need. Our goal is to help you succeed by evolving with you as your business grows.</p>
+</div>
+    </div>
+</div>
+
+<!--<div id="clickme">
+  Click here
+</div>
+<div id="book" style="position: relative; left: 10px; background-color:#0099FF; width: 100px; height: 123px;">
+Libro
+</div>-->
+
+</body>
+</html>

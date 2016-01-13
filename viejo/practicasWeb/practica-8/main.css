@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body {
+	
+	color:#333333;
+}
+#contenedor {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #333333;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+	font-family: 'Arvo', serif;
+}
+input , textarea:focus{
+	outline: 0;
+}
+
+label{
+	display: none;
+}
+input[type="text"],input[type="email"] {
+	width: 49%;
+	display: block;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	border: solid 1px #dddddd;
+	padding: 2%;
+	font-family: 'Arvo', serif;
+	box-shadow: 1px 1px 1px 1px #EBEBEB;
+}
+input[type="text"]{
+	float: left;
+}
+input[type="email"]{
+	float: right;
+}
+textarea{
+	clear: both;
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	resize: none;
+	border: solid 1px #dddddd;
+	padding: 2%;
+	font-family: 'Arvo', serif;
+	box-shadow: 1px 1px 1px 1px #EBEBEB;
+
+}
+input[name="Send it"]{
+	display: block;
+	width: 100px;
+	height: 100px;
+	font-size:14px;
+	font-weight: bold;
+	color:#fff;
+	background-color:#339966;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius:50px;
+	border: none 0;
+	transition: transform 0.5s ease-out;
+	margin: 0 auto;
+}
+input[name="Send it"]:hover{
+	transform: rotate(60deg);
+}
+

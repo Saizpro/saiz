@@ -1,0 +1,227 @@
+@charset "utf-8";
+#map-canvas {
+        height: 230px;
+		width: 350px  
+      }
+header img {
+	height: 100px;
+	width: 130px;
+	float: left;
+}
+img[alt="imagen decorativa"] {
+	height: 120px;
+	clear: both;
+}
+#contacto  #map-canvas {
+	float: left;
+	margin-right: 20px;
+}
+body {
+	background-attachment: fixed;
+	background-image: url(img/IMG_7834_crop.jpg);
+	background-size:contain;
+}
+
+
+.clear {
+	clear: both;
+}
+.centrar {
+	text-align: center;
+}
+.cursiva {
+	font-style: italic;
+}
+#mapa {
+	margin-top: 150px;
+	margin-bottom: 20px;
+	padding-top: 50px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #999999;
+	padding-bottom: 30px;
+}
+#anteform {
+	float: left;
+	width: 30%;
+	clear: left;
+}
+#contacto .container #form1 {
+	float: right;
+	width: 66%;
+}
+#form1   input, #form1  textarea {
+	background-color: #EAEAEA;
+	height: 40px;
+	border: 1px solid #DBDBDB;
+	outline:0;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.pequeña {
+	font-size: 0.75em;
+}
+#form1 label[for="enviar"] {
+	display: none;
+}
+
+
+#form1 textarea {
+	height: 80px;
+}
+#contacto {
+	background-color: #FFFFFF;
+}
+#pnombre {
+	width: 45%;
+	float: left;
+}
+#papellidos {
+	width: 50%;
+	float: right;
+}
+#nombre, #apellidos {
+	width: 100%;
+}
+
+#contacto .container {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #009;
+	text-align: center;
+	
+}
+#pie960 #hgroup1 {
+	float: left;
+	text-align: center;
+	margin-bottom: 40px;
+	
+}
+#pie960 .get .stay {
+	float: right;
+	text-align: center;
+
+}
+#pie960 #hgroup2 {
+	clear: both;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+#pie960 {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 40px;
+	background-color: #000099;
+	background-position: bottom;
+}
+
+
+
+#contacto #mapa h1 {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+#pie960 .get {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#contacto .container #anteform h1 {
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+#contacto .container #form1 p {
+	margin-bottom: 1.5em;
+}
+
+
+#contacto #mapa h2 {
+	margin-bottom: 1.5em;
+	font-family: 'Oswald', sans-serif;
+}
+label[for="nombre"], label[for="apellidos"] {
+	font-size: 0.5em;
+}
+
+input,textarea  {
+	display: block;
+	width: 100%;
+}
+#form1 input[id="enviar"] {
+	height: 40px;
+	width: 100px;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+
+a {
+	color: #D3D900;
+	text-decoration: none;
+}
+
+
+header {
+	background-color: #333333;
+	padding: 10px;
+	height: 110px;
+}
+nav li {
+	display: inline-block;
+}
+nav {
+	float: right;
+	margin-top: 45px;
+}
+nav a:hover {
+	color: #CCCC33;
+}
+
+
+nav a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	padding-right: 30px;
+	font-weight: bold;
+}
+#hgroup1 h1,.stay h1, #hgroup2 h1{
+	font-size: 1.5em;
+	margin-bottom: 30px;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+
+}
+}
+#pie960 #hgroup2 {
+	margin-bottom: 80px;
+}
+#pie960 p {
+	font-size: 0.75em;
+	text-transform: lowercase;
+}
+
+.fa {
+	background-color: #CCCC33;
+	height: 23px;
+	width: 30px;
+	border-radius:15px;
+	color:#000099;
+	padding-top: 7px;
+}
+
+ #form1 legend:after, #form1 label[for="email"]:after, #form1 label[for="subject"]:after, #form1 label[for="mensaje"]:after{
+	content:"*";
+	color:#FF0000;
+}

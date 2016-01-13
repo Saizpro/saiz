@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Viaje</title>
+  <link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+<header>
+<div class="barra">
+  <div class="container">
+    <div class="top-menu">
+    <ul>
+      <li><a href="#"><i class="fa fa-commenting-o"></i>Contact us</a></li>
+      <li><a href="#"><i class="fa fa-calendar-check-o"></i>Book an appointment</a></li>
+      <li><a href="#"><i class="fa fa-map-pin"></i>Find a store</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Group travel</a></li>
+      <li><a href="#">Language</a></li>
+      <li><a href="#"><i class="fa fa-search"><div class="none-display">Search</div></i></a></li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+  </div>
+</div>
+<div class="container">
+  <h1><img src="logo.png" alt="logo" longdesc="logo"> Start the adventure</h1>
+  <p>Toll free at <a class="telf" href="tel:8007814040">800.781.4040 </a></p>
+  <nav class="clear">
+    <ul>
+      <li><a href="#">Flights</a></li>
+      <li><a href="#">Hotels & Hostels</a></li>
+      <li><a href="#">Tour rail</a></li>
+      <li><a href="#">Travel insurance</a></li>
+      <li><a href="#">Isic cards</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Trip planning</a></li>
+      <li><a href="#">Sales & Discounts</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+<div class="container">
+  <ul>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">Cart</a></li>
+  </ul>
+  <h2 class="lupa-block" class="lupa">Advanced search</h2>
+  <form id="form1" name="form1" method="post" action="#">
+    <fieldset>
+      <legend class="dest">Destinations & dates</legend>
+      <p>
+        <input type="radio" name="GrupoOpciones1" value="0" id="GrupoOpciones1_0">
+          <label for="GrupoOpciones1_0">Round-trip</label>
+        <input type="radio" name="GrupoOpciones1" value="1" id="GrupoOpciones1_1">
+          <label for="GrupoOpciones1_1">One-way</label>
+       <input type="radio" name="GrupoOpciones1" value="2" id="GrupoOpciones1_2">
+          <label for="GrupoOpciones1_2">Multi-city</label><i class="fa fa-info-circle"></i><div class="none-display">info</div>
+      </p>
+      <p>
+        <label for="from">From (city or airport)</label>
+          <input type="text" name="from" id="from">
+        <label for="dia">Departure date</label> 
+          <select name="dia" id="dia">
+            <option value="1">1</option>
+           <option value="2">2</option>
+           <option value="3">3</option>
+          </select>
+        <label for="mes" class="none-display">mes</label>
+          <select name="mes" id="mes"> 
+            <option value="nov 2015">nov 2015</option>
+            <option value="dic 2015">dic 2015</option>
+          </select>
+          <span class="fa fa-calendar"><div class="none-display"><label for="hora">calendario</label></span>
+          <select name="hora" id="hora">
+            <option value="0">any time</option>
+            <option value="1">00:00</option>
+            <option value="2">00:30</option>
+          </select> 
+      </p>
+      <p> 
+        <label for="to">(city or airport)<label>
+          <input type="text" name="to" id="to">
+        <label for="dia2">Return date</label> 
+          <select name="dia" id="dia2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+          <select name="mes" id="mes2">
+            <option value="nov 2015">nov 2015</option>
+            <option value="dic 2015">dic 2015</option>
+          </select>
+          <span class="fa fa-calendar"><div class="none-display"><label for="hora2">calendario</label></span>
+          <select name="hora" id="hora2">
+            <option value="0">any time</option>
+            <option value="1">00:00</option>
+            <option value="2">00:30</option>
+          </select>
+      </p>
+    </fieldset>
+    <fieldset>      
+      <legend class="trav">Traveler(s)</legend>
+      <p>
+        <label for="student">Student</label><i class="fa fa-info-circle"></i><div class="none-display">info</div>
+          <select name="Student" id="Student">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        <label for="under_26">Under 26</label><i class="fa fa-info-circle"></i><div class="none-display">info</div>
+          <select name="under_26" id="under_26">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        <label for="adults">Adults 26+</label><i class="fa fa-info-circle"></i><div class="none-display">info</div>
+          <select name="adults" id="adults">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        <label for="teacher">Teacher</label><i class="fa fa-info-circle"></i><div class="none-display">info</div>
+          <select name="teacher" id="teacher">
+            <option value="0">0</option>
+            <option value="1">1</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <input name="flexible" type="checkbox" id="flexible" value="1">
+          <label for="flexible">Show flexible dates (+/- 3 days)</label>
+        <input name="non_stop" type="checkbox" id="non_stop" value="1">
+          <label for="non_stop">Show only non-stop flights</label>
+      </p>    
+    </fieldset>
+    <fieldset>
+      <legend class="flight">Flight options</legend>
+        <h3>Preferred airline(s)</h3>
+          <p>You can refine to prefend airlines. Select  up to 3 airlines from the droplist below.</p>
+      <p>    
+        <select name="1" id="a">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+          <label for="a" class="none-display">1st preferred airline</label>
+        <select name="2" id="b">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+        <label for="b" class="none-display">2nd preferred airline</label>
+        <select name="3" id="c">
+          <option value="0">0</option>
+          <option value="1">1</option>
+        </select>
+          <label for="c" class="none-display">3rd preferred airline</label>
+      </p>    
+        <h3><label for="class">cabin class</label></h3>
+          <p> 
+            <select name="class" id="class">
+              <option value="0">0</option>
+              <option value="1">1</option>
+            </select>
+          </p>
+    </fieldset>
+	<input name="Search" type="button" value="Search">
+  </form>  
+</div>
+<footer class="barra">
+<div class="footer-block">
+  <div class="container">
+    <div class="stripes"> 
+      <h3>Like sta travel? Spread the world!</h3>
+        <ul class="social">
+          <li><a href="#"><i class="fa fa-facebook"></i></a><div class="none-display">facebook</div></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a><div class="none-display">twitter</div></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a><div class="none-display">youtube</div></li>
+          <li><a href="#"><i class="fa fa-vimeo"></i></a><div class="none-display">vimeo</div></li>
+          <li><a href="#"><i class="fa fa-google-plus"></i></a><div class="none-display">google+</div></li>
+        </ul>
+    </div>
+    <div class="col">  
+      <h3>Contact us</h3>
+        <ul class="contact">
+          <li class="phone">Call 800 781 4040</li>
+          <li class="quote">Get a quote</li>
+          <li class="store">Store finder</li>
+          <li class="book">Book an appointment</li>
+        </ul>
+    </div>
+    <div class="col">  
+      <h3>About sta travel</h3>
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Media hub</a></li>
+          <li><a href="#">Term and condition</a></li>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Become an affiliate</a></li>
+          <li><a href="#">Work with US</a></li>
+          <li><a href="#">Travel Agents</a></li>
+          <li><a href="#">Site map</a></li>
+        </ul>
+    </div>
+    <div class="col">    
+      <h3>Sta travel solution</h3>
+        <ul>
+          <li><a href="#">Groups & programs</a></li>
+          <li><a href="#">ISIC Card issuing officers</a></li>
+          <li><a href="#">Corporate travel</a></li>
+        </ul>
+      <h3>Support</h3>
+        <ul>
+          <li><a href="#">Travel help</a></li>
+          <li><a href="#">Customer service</a></li>
+        </ul>
+      <h3>Get our mobile app</h3>
+    </div>
+    <div class="col">  
+      <h3>Sign up to our newsletter to get the latast deals</h3>
+        <form action="#" method="post" id="newsletter">
+          <input type="text" name="mail" id="mail">
+          <input type="submit" name="enviar" id="enviar">
+        </form>
+        <img src="blog.png" width="38" height="38" alt="blog">
+        <p>st travel blog Explore the sta travel blog</p>
+    </div>
+  </div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+    <title>Formulario de contacto</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+
+<body>
+<div class="container">
+<form action="#" method="post" enctype="text/plain">
+<div class="row form-group">    
+    <div class="col-sm-4">
+        <label class="h4" for="nombre">Nombre </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Opcional" class="form-control">
+    </div>
+    <div class="col-sm-4 col-sm-offset-2">
+        <label class="h4" for="centro">Centro </label>
+        <input type="text" id="centro" name="centro" class="form-control" required>
+    </div>
+    <div class="col-sm-4 col-sm-offset-2">
+        <label class="h4" for="curso">Curso </label>
+        <input type="text" id="curso" name="curso" class="form-control" required>
+    </div>
+</div>
+<!--DATOS -->
+<fieldset>
+<div class="row">
+    <legend class="h2 col-md-8">Valoración general</legend>
+     <ul class="list-inline list-unstyled col-md-8">
+        <li class="col-md-4 text-center">En absoluto</li>
+        <li class="col-md-4 text-center">Poco</li>
+        <li class="col-md-4 text-center">Mucho</li>
+        <li class="col-md-4 text-center">Totalmente</li>
+    </ul>
+</div>
+<!--ENCABEZADO -->
+    <fieldset  class="row">
+       <legend class="col-md-8">El curso ha respondido a mis expectativas</legend>
+        <div class="col-md-2"><input type="radio" name="expectativas" value="1" id="expectativa_en_absoluto"> <label for="expectativa_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="expectativas" value="2" id="expectativa_poco"> <label for="expectativa_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="expectativas" value="3" id="expectativa_mucho"> <label for="expectativa_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="expectativas" value="4" id="expectativa_totalmente"> <label for="expectativa_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- PRIMERA PREGUNTA-->
+    <fieldset  class="row">
+    <legend  class="col-md-8">En general, mi opinión del curso es satisfactoria</legend>
+        <div class="col-md-2"><input type="radio" name="opinion" value="1" id="curso_en_absoluto"> <label for="curso_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="opinion" value="2" id="curso_poco"> <label for="curso_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="opinion" value="3" id="curso_mucho"> <label for="curso_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="opinion" value="4" id="curso_totalmente"> <label for="curso_totalmente">Totalmente</label></div>       
+    </fieldset>
+    <!-- SEGUNDA PREGUNTA--> 
+    <fieldset  class="row"> 
+    <legend  class="col-md-8">En general, mi opinión del centro es satisfactoria</legend>
+        <div class="col-md-2"><input type="radio" name="centro" value="1" id="centro_en_absoluto"> <label for="centro_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="centro" value="2" id="centro_poco"> <label for="centro_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="centro" value="3" id="centro_mucho"> <label for="centro_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="centro" value="4" id="centro_totalmente"> <label for="centro_totalmente">Totalmente</label> </div>
+    </fieldset>
+    <!-- TERCERA PREGUNTA-->
+    <fieldset  class="row">    
+    <legend  class="col-md-8">Si alguien me oreguntase por estos cursos se los recomendaria</legend>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="1" id="trabajo_en_absoluto"> <label for="trabajo_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="2" id="trabajo_poco"> <label for="trabajo_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="3" id="trabajo_mucho"> <label for="trabajo_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="4" id="trabajo_totalmente"> <label for="trabajo_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- CUARTA PREGUNTA-->
+    <fieldset  class="row">    
+    <legend  class="col-md-8">El curso ha aumentado mis posibilidades de tener trabajo</legend>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="1" id="trabajo_en_absoluto"> <label for="trabajo_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="2" id="trabajo_poco"> <label for="trabajo_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="3" id="trabajo_mucho"> <label for="trabajo_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="posibilidades" value="4" id="trabajo_totalmente"> <label for="trabajo_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- QUINTA PREGUNTA-->
+</fieldset>
+<!--PRIMER FIELDSET-->
+<fieldset>
+<div class="row">
+    <legend class="h2 col-md-8">Resultados aprendizaje/objetivos</legend>
+     <ul class="list-inline list-unstyled col-md-8">
+        <li class="col-md-4 text-center">En absoluto</li>
+        <li class="col-md-4 text-center">Poco</li>
+        <li class="col-md-4 text-center">Mucho</li>
+        <li class="col-md-4 text-center">Totalmente</li>
+    </ul>
+</div>
+<!--ENCABEZADO -->   
+    <fieldset class="row">
+    <legend class="col-md-8">Las pruebas han sido adecuadas para el aprendizaje</legend>
+        <div class="col-md-2"><input type="radio" name="pruebas" value="1" id="pruebas_en_absoluto"><label for="pruebas_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="pruebas" value="2" id="pruebas_poco"> <label for="pruebas_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="pruebas" value="3" id="pruebas_mucho"> <label for="pruebas_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="pruebas" value="4" id="pruebas_totalmente"> <label for="pruebas_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- SEXTA PREGUNTA-->
+    <fieldset class="row">
+    <legend class="col-md-8">El programa del curso se ha cumplido</legend>
+        <div class="col-md-2"><input type="radio" name="programa" value="1" id="programa_en_absoluto"> <label for="programa_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="programa" value="2" id="programa_poco"> <label for="programa_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="programa" value="3" id="programa_mucho"> <label for="programa_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="programa" value="4" id="programa_totalmente"> <label for="programa_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- SÉPTIMA PREGUNTA-->
+    <fieldset class="row">  
+    <legend class="col-md-8">Los contenidos han correspondido con la finalidad del curso</legend>
+        <div class="col-md-2"><input type="radio" name="finalidad" value="1" id="finalidad_en_absoluto"> <label for="finalidad_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="finalidad" value="2" id="finalidad_poco"> <label for="finalidad_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="finalidad" value="3" id="finalidad_mucho"> <label for="finalidad_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="finalidad" value="4" id="finalidad_totalmente"> <label for="finalidad_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- OCTAVA PREGUNTA-->
+    <fieldset class="row">
+    <legend class="col-md-8">Al finalizar pienso que he conseguido una buena preparación profesional</legend>
+        <div class="col-md-2"><input type="radio" name="preparacion" value="1" id="preparacion_en_absoluto"> <label for="preparacion_en_absoluto">En absoluto</label></div>
+        <div class="col-md-2"><input type="radio" name="preparacion" value="2" id="preparacion_poco"> <label for="preparacion_poco">Poco</label></div>
+        <div class="col-md-2"><input type="radio" name="preparacion" value="3" id="preparacion_mucho"> <label for="preparacion_mucho">Mucho</label></div>
+        <div class="col-md-2"><input type="radio" name="preparacion" value="4" id="preparacion_totalmente"> <label for="preparacion_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- NOVENA PREGUNTA-->
+</fieldset>
+<!--SEGUNDO FIELDSET-->
+<fieldset>
+    <div class="row">
+    <legend class="h2 col-md-8">Materiales y recursos</legend>
+     <ul class="list-inline list-unstyled col-md-8">
+        <li class="col-md-4 text-center">En absoluto</li>
+        <li class="col-md-4 text-center">Poco</li>
+        <li class="col-md-4 text-center">Mucho</li>
+        <li class="col-md-4 text-center">Totalmente</li>
+    </ul>
+</div>
+<!--ENCABEZADO -->   
+    <fieldset class="row">
+        <legend class="col-md-8">Los materiales fueron suficientes</legend>
+        <div class="col-md-2"><input type="radio" name="materiales" value="1" id="materiales_en_absoluto"> <label for="materiales_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="materiales" value="2" id="materiales_poco"> <label for="materiales_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="materiales" value="3" id="materiales_mucho"> <label for="materiales_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="materiales" value="4" id="materiales_totalmente"> <label for="materiales_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- DÉCIMA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Las instalaciones me han parecido adecuadas</legend>
+            <div class="col-md-2"><input type="radio" name="instalaciones" value="1" id="instalaciones_en_absoluto"> <label for="instalaciones_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="instalaciones" value="2" id="instalaciones_poco"> <label for="instalaciones_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="instalaciones" value="3" id="instalaciones_mucho"> <label for="instalaciones_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="instalaciones" value="4" id="instalaciones_totalmente"> <label for="instalaciones_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- DÉCIMO PRIMERA PREGUNTA-->  
+    <fieldset class="row">
+        <legend class="col-md-8">La documentacion ha sido suficiente</legend>
+            <div class="col-md-2"><input type="radio" name="documentacion" value="1" id="documentacion_en_absoluto"> <label for="documentacion_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="documentacion" value="2" id="documentacion_poco"> <label for="documentacion_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="documentacion" value="3" id="documentacion_mucho"> <label for="documentacion_mucho">Mucho</label></div>
+           <div class="col-md-2"> <input type="radio" name="documentacion" value="4" id="documentacion_totalmente"> <label for="documentacion_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- DÉCIMO SEGUNDA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">La calidad de la documentación ha sido buena</legend>
+            <div class="col-md-2"><input type="radio" name="calidad" value="1" id="calidad_en_absoluto"> <label for="calidad_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="calidad" value="2" id="calidad_poco"> <label for="calidad_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="calidad" value="3" id="calidad_mucho"> <label for="calidad_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="calidad" value="4" id="calidad_totalmente"> <label for="calidad_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- DÉCIMO TERCERA PREGUNTA-->
+</fieldset>
+<!--TERCER FIELDSET-->
+<fieldset>
+    <legend class="h2">Imparticion</legend>
+        <fieldset class="row">
+            <legend class="col-md-8">La duracion del curso ha sido</legend>
+            <div class="col-md-2"><input class="resdif" type="radio" name="duracion" value="1" id="duracion_excesiva"> <label class="show-in" for="duracion_excesiva">Excesiva</label></div>
+                <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="duracion" value="2" id="duracion_adecuada"> <label class="show-in" for="duracion_adecuada">Adecuada</label></div>
+                <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="duracion" value="3" id="duracion_escasa"> <label class="show-in" for="duracion_escasa">Escasa</label></div>
+        </fieldset>
+        <!-- DÉCIMO CUARTA PREGUNTA-->
+        <fieldset class="row">
+            <legend class="col-md-8">El ritmo del curso ha sido</legend>
+                <div class="col-md-2"><input class="resdif" type="radio" name="ritmo" value="1" id="ritmo_rapido"> <label class="show-in" for="ritmo_rapido">Rápido</label></div>
+                <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="ritmo" value="2" id="ritmo_adecuado"> <label class="show-in" for="ritmo_adecuado">Adecuado</label></div>
+                <div class="col-md-2 col-md-offset-1"><input  class="resdif"type="radio" name="ritmo" value="3" id="ritmo_bajo"> <label class="show-in" for="ritmo_bajo">Bajo</label></div>
+        </fieldset>
+        <!-- DÉCIMO QUINTA PREGUNTA-->
+        <fieldset class="row">  
+            <legend class="col-md-8">La proporcion de clases prácticas sobre teoricas ha sido</legend>
+               <div class="col-md-2"><input class="resdif" type="radio" name="practicas" value="1" id="practicas_excesiva"> <label class="show-in" for="practicas_excesiva">Excesiva</label></div>
+               <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="practicas" value="2" id="practicas_adecuado"> <label class="show-in" for="practicas_adecuado">Adecuada</label></div>
+               <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="practicas" value="3" id="practicas_escasa"> <label class="show-in" for="practicas_escasa">Escasa</label></div>
+        </fieldset>
+        <!-- DÉCIMO SEXTA PREGUNTA-->
+        <fieldset class="row">      
+            <legend class="col-md-8">El grado de dificultad del os contenidos en el curso ha sido</legend>
+               <div class="col-md-2"><input class="resdif" type="radio" name="dificultad" value="1" id="dificultad_alto"> <label class="show-in" for="dificultad_alto">Alto</label></div>
+               <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="dificultad" value="2" id="dificultad_adecuado"> <label class="show-in" for="dificultad_adecuado">Adecuada</label></div>
+             <div class="col-md-2 col-md-offset-1"><input class="resdif" type="radio" name="dificultad" value="3" id="dificultad_bajo"> <label class="show-in" for="dificultad_bajo">Bajo</label></div>
+        </fieldset>
+        <!-- DÉCIMO SÉPTIMA PREGUNTA-->
+    <div class="row">
+     <ul class="list-inline list-unstyled col-md-8 pull-right">
+        <li class="col-md-4 text-center">En absoluto</li>
+        <li class="col-md-4 text-center">Poco</li>
+        <li class="col-md-4 text-center">Mucho</li>
+        <li class="col-md-4 text-center">Totalmente</li>
+    </ul>
+</div>
+<!--ENCABEZADO -->   
+        <fieldset class="row">
+        <legend class="col-md-8">Las prácticas realizadas han sido completas y adecuadas</legend>
+        <div class="col-md-2"><input type="radio" name="realizadas" value="1" id="realizadas_en_absoluto"> <label for="realizadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="2" id="realizadas_poco"> <label for="realizadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="3" id="realizadas_mucho"> <label for="realizadas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="4" id="realizadas_totalmente"> <label for="realizadas_totalmente">Totalmente</label></div>
+    </fieldset>
+        <!-- DÉCIMO OCTAVA PREGUNTA-->
+        <fieldset class="row">
+        <legend class="col-md-8">El curso ha estado correctamente organizado</legend>
+        <div class="col-md-2"><input type="radio" name="realizadas" value="1" id="realizadas_en_absoluto"> <label for="realizadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="2" id="realizadas_poco"> <label for="realizadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="3" id="realizadas_mucho"> <label for="realizadas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="4" id="realizadas_totalmente"> <label for="realizadas_totalmente">Totalmente</label></div>
+    </fieldset>
+        <!-- DÉCIMO NOVENA PREGUNTA-->
+        <fieldset class="row">
+        <legend class="col-md-8">El curso se ha desarrollado sin grandes cambios sobre el plan presentado al comienzo</legend>
+        <div class="col-md-2"><input type="radio" name="realizadas" value="1" id="realizadas_en_absoluto"> <label for="realizadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="2" id="realizadas_poco"> <label for="realizadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="3" id="realizadas_mucho"> <label for="realizadas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="4" id="realizadas_totalmente"> <label for="realizadas_totalmente">Totalmente</label></div>
+    </fieldset>
+        <!-- VIGÉSIMA PREGUNTA-->
+        <fieldset class="row">
+        <legend class="col-md-8">El horario del curso ha sido respetado</legend>
+        <div class="col-md-2"><input type="radio" name="realizadas" value="1" id="realizadas_en_absoluto"> <label for="realizadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="2" id="realizadas_poco"> <label for="realizadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="3" id="realizadas_mucho"> <label for="realizadas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="4" id="realizadas_totalmente"> <label for="realizadas_totalmente">Totalmente</label></div>
+    </fieldset>
+        <!-- VIGÉSIMOPRIMERA PREGUNTA-->
+        <fieldset class="row">
+        <legend class="col-md-8">El personal del centro me ha atendido de forma correcta</legend>
+        <div class="col-md-2"><input type="radio" name="realizadas" value="1" id="realizadas_en_absoluto"> <label for="realizadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="2" id="realizadas_poco"> <label for="realizadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="3" id="realizadas_mucho"> <label for="realizadas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="realizadas" value="4" id="realizadas_totalmente"> <label for="realizadas_totalmente">Totalmente</label></div>
+    </fieldset>
+        <!-- VIGÉSIMOSEGUNDA PREGUNTA-->
+</fieldset>
+<!--CUARTO FIELDSET-->
+<fieldset>
+    <div class="row">
+    <legend class="h2 col-md-8">Profesorado</legend>
+     <ul class="list-inline list-unstyled col-md-8">
+        <li class="col-md-4 text-center">En absoluto</li>
+        <li class="col-md-4 text-center">Poco</li>
+        <li class="col-md-4 text-center">Mucho</li>
+        <li class="col-md-4 text-center">Totalmente</li>
+    </ul>
+</div>
+<!--ENCABEZADO -->   
+    <fieldset class="row">
+        <legend class="col-md-8">Ha expuesto los contenidos con claridad</legend>
+        <div class="col-md-2"><input type="radio" name="claridad" value="1" id="claridad_en_absoluto"> <label for="claridad_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="claridad" value="2" id="claridad_poco"> <label for="claridad_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="claridad" value="3" id="claridad_mucho"> <label for="claridad_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="claridad" value="4" id="claridad_totalmente"> <label for="claridad_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOTERCERA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Ha desarrollado las clases de forma interesante</legend>
+            <div class="col-md-2"><input type="radio" name="interesante" value="1" id="interesanteen_absoluto"> <label for="interesante_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="interesante" value="2" id="interesantes_poco"> <label for="interesante_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="interesante" value="3" id="interesante_mucho"> <label for="interesante_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="interesante" value="4" id="interesante_totalmente"> <label for="interesante_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOCUARTA PREGUNTA-->  
+    <fieldset class="row">
+        <legend class="col-md-8">Domina los conocimientos del curso</legend>
+            <div class="col-md-2"><input type="radio" name="conocimientos" value="1" id="conocimientos_en_absoluto"> <label for="conocimientos_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="conocimientos" value="2" id="conocimientos_poco"> <label for="conocimientos_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="conocimientos" value="3" id="conocimientos_mucho"> <label for="conocimientos_mucho">Mucho</label></div>
+           <div class="col-md-2"> <input type="radio" name="conocimientos" value="4" id="conocimientos_totalmente"> <label for="conocimientos_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOQUINTA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Estableció un buen clima con los alumnos</legend>
+            <div class="col-md-2"><input type="radio" name="clima" value="1" id="clima_en_absoluto"> <label for="clima_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="clima" value="2" id="clima_poco"> <label for="clima_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="clima" value="3" id="clima_mucho"> <label for="clima_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="clima" value="4" id="clima_totalmente"> <label for="clima_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOSEXTA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Atendió las consultas y clarificó las dudas</legend>
+        <div class="col-md-2"><input type="radio" name="clarificar" value="1" id="clarificar_en_absoluto"> <label for="clarificar_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="clarificar" value="2" id="clarificar_poco"> <label for="clarificar_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="clarificar" value="3" id="clarificar_mucho"> <label for="clarificar_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="clarificar" value="4" id="clarificar_totalmente"> <label for="clarificar_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOSÉPTIMA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Planteó numerosas actividades y ejercicios prácticos</legend>
+            <div class="col-md-2"><input type="radio" name="ejercicios" value="1" id="ejercicios_en_absoluto"> <label for="ejercicios_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="ejercicios" value="2" id="ejercicios_poco"> <label for="ejercicios_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="ejercicios" value="3" id="ejercicios_mucho"> <label for="ejercicios_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="ejercicios" value="4" id="ejercicios_totalmente"> <label for="ejercicios_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMOCTAVA PREGUNTA-->  
+    <fieldset class="row">
+        <legend class="col-md-8">Las actividades y prácticas estaban relacionadas con los contenidos</legend>
+            <div class="col-md-2"><input type="radio" name="relacionadas" value="1" id="relacionadas_en_absoluto"> <label for="relacionadas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="relacionadas" value="2" id="relacionadas_poco"> <label for="relacionadas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="relacionadas" value="3" id="relacionadas_mucho"> <label for="relacionadas_mucho">Mucho</label></div>
+           <div class="col-md-2"> <input type="radio" name="relacionadas" value="4" id="relacionadas_totalmente"> <label for="relacionadas_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- VIGÉSIMONOVENA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Utilizó de forma efectiva las ayudas y recursos didácticos y/o audiovisuales</legend>
+            <div class="col-md-2"><input type="radio" name="ayudas" value="1" id="ayudas_en_absoluto"> <label for="ayudas_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="ayudas" value="2" id="ayudas_poco"> <label for="ayudas_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="ayudas" value="3" id="ayudas_mucho"> <label for="ayudas_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="ayudas" value="4" id="ayudas_totalmente"> <label for="ayudas_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- TRIGÉSIMA PREGUNTA-->
+    <fieldset class="row">
+        <legend class="col-md-8">Me gustaría volver a tenerlo de profesor/a</legend>
+            <div class="col-md-2"><input type="radio" name="volver" value="1" id="volver_en_absoluto"> <label for="volver_en_absoluto">En absoluto</label></div>
+            <div class="col-md-2"><input type="radio" name="volver" value="2" id="volver_poco"> <label for="volver_poco">Poco</label></div>
+            <div class="col-md-2"><input type="radio" name="volver" value="3" id="volver_mucho"> <label for="volver_mucho">Mucho</label></div>
+            <div class="col-md-2"><input type="radio" name="volver" value="4" id="volver_totalmente"> <label for="volver_totalmente">Totalmente</label></div>
+    </fieldset>
+    <!-- TRIGÉSIMO PRIMERA PREGUNTA-->    
+</fieldset>
+<!--QUINTO FIELDSET-->
+<fieldset>
+<legend>Yo sugeriría cambiar en el curso lo siguiente:</legend>
+<label for="cambios">Yo sugeriría cambar en el curso lo siguiente</label><textarea name="cambios" id="cambios"></textarea>
+</fieldset>
+<fieldset>
+<legend>Otros comentarios:</legend>
+<label for="otros">Otros comentarios</label><textarea name="otros" id="otros"></textarea>
+</fieldset>
+<input class="btn btn-primary" type="submit" name="enviar" value="Enviar">
+</form>
+</div>
+</body>
+</html>

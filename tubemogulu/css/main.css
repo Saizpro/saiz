@@ -1,0 +1,68 @@
+ img{
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+.fondo1{
+    padding-top: 128px; 
+    padding-bottom: 128px; 
+    background-image: url(../img/banner.jpg);
+    background-color: transparent; 
+    background-position: 50% 0px;
+}
+    .fondo1 p, .fondo1 h1{
+        color: white;
+        text-align: center;
+    }
+.logo{
+    background-image: url(../img/TubeU-Logo_white-e1438730075937-300x39.png);
+    max-width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: center;
+}
+.h1{
+    font-size: 4em;
+}
+.container80{
+    width: 80%;
+    margin: 0 auto;
+}
+    .container80>a{
+        text-transform: uppercase;
+        padding: 15px;
+    }  
+.border-bot{
+    border-bottom: 2px solid gray;
+}
+.container100{
+    width: 100%;
+}
+.backcolorgray{
+    background-color: #F7F8FA;
+}
+.padding-top-bot{
+    padding: 75px 0;
+}
+h2:after{
+    content: " ";
+    border-bottom: 2px solid black;
+    width: 85px;
+    margin: 0 auto;
+    display: block;
+    padding-top: 15px;
+
+}
+.col-md-6>h2:after{
+    margin: 0 0;
+}
+h2{
+    text-transform: capitalize;
+    color: darkslategray;
+    font-size: 3em;
+    padding-bottom: 50px;
+}
+.row>div>img{
+    margin: 0 auto;
+}

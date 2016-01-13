@@ -1,0 +1,117 @@
+@charset "utf-8";
+header {
+	background-image: url(../images/bg.png);
+	
+	background-repeat: repeat-x;
+	position: fixed;
+	height: 56px;
+	width: 100%;
+	z-index: 999;
+}
+header h1 {
+	text-align: center;
+	position: absolute;
+	margin-top: -30px;
+	transition: all 0.8s;
+}
+header h1:hover {
+	margin-top: -28px;	
+}
+article {
+	background-image: url(../images/bg-seahorse2.png), url(../images/bg-white-dots.png);
+	background-repeat: no-repeat, repeat;
+	padding-top: 120px;
+	
+}
+#home h1 {
+	font-family: 'Lobster', cursive;
+	color: #ed7263;
+	text-shadow: 1px 1px 0 #fef6e9,-1px -1px 0 #fef6e9, 4px 4px 0 rgba(52,54,56,.2);
+	text-align: center;
+	position: relative;
+	font-size: 75px;
+	font-style: italic;
+	padding-bottom: 10px;
+}
+.parrafohome   {
+	text-align: center;
+	border-top-width: thin;
+	border-bottom-width: thin;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+nav a {
+	position: relative;
+	z-index: 999;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+}
+nav li {
+	display: inline;
+	margin-top: 10px;
+}
+.mask p {
+	text-align: center;
+}
+
+#home .one-third  {
+	position: relative;
+	overflow: hidden;
+}
+
+.mask{
+	position: absolute;
+	top: -200px;
+	height: 183px;
+	width: 284px;
+	transition: all 1s;
+	background-image: url(../images/bg-blue.png);
+}
+.mask a:hover {
+	background-position: 0 -32px;		
+	}
+.mask a{
+	background-image: url(../images/icon-view.png);
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+	transition: all 0.2s;
+}
+
+	
+
+.mask h3 {
+	font-size: 27px;
+	color: #fef6e9;
+	text-align: center;
+}
+
+.one-third:hover   .mask   {
+	top: 0px;
+}
+
+#porfolio, #about, #contact{
+	padding-top: 50px;
+}
+
+#nav .current a {
+color: #FF0000;
+}
+
+.error{
+	display: block;
+	color:#FF0000;
+}

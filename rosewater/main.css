@@ -1,0 +1,149 @@
+nav ul li{
+	display: inline-block;
+	text-transform: uppercase;
+	width: 10.55%;
+	text-align: center; 
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+nav ul li a{
+    padding-bottom: 5px;
+	text-decoration: none;
+    letter-spacing: 2px;
+}
+header{
+	position: fixed;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	border: solid 1px #CCC;
+	overflow: hidden;
+    z-index: 99999;
+}
+h2{
+	padding-top: 90px;
+	padding-bottom: 50px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 1.8em;
+}
+h3{
+	display: block;
+	padding-top: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 1.5em;
+	font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+cite{
+	font-style: 0.7em;
+}
+p{
+	padding: 0 20px;
+	margin-bottom: 20px;
+	font-size: 0.9em;
+	text-align: center;
+	line-height: 1.5;
+	word-spacing: 10px;
+	letter-spacing: 3px;
+}
+.container1{
+    width: 1150px;
+	margin: 0 auto;
+    height: 670px;
+    background-color: white;
+}
+.container0{
+	width: 1150px;
+	margin: 0 auto;
+}
+.container{
+	width: 1150px;
+	margin: 0 auto;
+    height: auto;
+    background-color: white;
+}
+.container1>div{
+    z-index: 99;
+	width: 33%;
+	float: left;
+	height: 450px;
+	background-size: cover;
+	margin-bottom: 100px;
+}
+.container1 div div{
+	opacity: 0;
+	transition: all 1s;
+	min-height: 100%;
+	background-color: rgba(255,255,255,0.8);
+}
+.container1 div div a{
+    border: 1.5px solid #c85f49;
+    color: #c85f49;
+    text-transform: uppercase;
+    font-weight: bolder;
+	text-decoration: none;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 9px 30px 7px;
+    letter-spacing: 2px;
+	display: block;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	width: 50px;
+	bottom: -20px;
+	transition: all 0.5s;
+	box-sizing: content-box;
+}
+.img1{		
+	background-image: url(rojo.png);
+}
+.img2{
+	background-image: url(oso.png);
+}
+.img3{
+	background-image: url(pareja.png);
+}
+.container1 div:hover>div{
+	opacity: 1;
+}
+.container1 div:hover>div a{
+	bottom: 0;
+}
+.container1 div div a:hover{
+    color: white;
+    background-color: #c85f49;
+}
+svg{
+	position: absolute;
+	width: 280px;
+	top: -70px;
+	left: 50%;
+	margin-left: -140px;
+}
+nav ul li:nth-child(4){
+	margin-left: 400px;
+}
+.fondo1{
+    background-image: url(fondo1.jpg);
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fondo2{
+    background-image: url(fondo2.jpg);
+    background-attachment: fixed;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#borde1 {
+    border-bottom: 5px solid black;
+    padding-top: 77px;
+}

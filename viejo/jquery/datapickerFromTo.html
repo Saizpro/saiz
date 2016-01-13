@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> Calendario  - Select a Date Range</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css"> <!--para el fancybox-->
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>  <!--para el fancybox-->
+
+
+  
+ 
+<script>
+  $.validator.setDefaults({
+		submitHandler: function() {
+		   $.ajax({
+           type: "POST",
+           url: "enviar-formulario.php",
+           data: $("#reserva").serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+		   	   $("#reserva").css ("display", "none"); //para ocultarlo y se aprecie el fadeIn
+               /*$("#contacto").text(data);*/  $("#reserva").html("<strong>"+data+"<strong>");
+		 	   $("#reserva").fadeIn(1000);
+           }
+         });
+
+    return false; // avoid to execute the actual submit of the form.
+		}
+	});
+
+	$().ready(function() {
+		// validate the comment form when it is submitted
+		$("#reserva").validate({
+			messages: {
+				from: "Introduce día de llegada",
+				to: "Introduce día de salida",
+				
+			}
+		});
+	 $("#politica").click(function() {      //para hacer un fancybox 
+				$.fancybox.open({
+					href : 'politicadeprivacidad.html',
+					type : 'iframe',
+					padding : 5
+				});
+			});
+			});
+	
+	
+
+
+   $(function() {
+   $.datepicker.regional['es'] = 
+  {
+  closeText: 'Cerrar', 
+  prevText: 'Previo', 
+  nextText: 'Próximo',
+   
+  monthNames: ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+  'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+  monthNamesShort: ['Ene','Feb','Mar','Abr','May','Jun',
+  'Jul','Ago','Sep','Oct','Nov','Dic'],
+  monthStatus: 'Ver otro mes', yearStatus: 'Ver otro año',
+  dayNames: ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'],
+  dayNamesShort: ['Dom','Lun','Mar','Mie','Jue','Vie','Sáb'],
+  dayNamesMin: ['Do','Lu','Ma','Mi','Ju','Vi','Sa'],
+  dateFormat: 'dd/mm/yy', firstDay: 0, 
+  initStatus: 'Selecciona la fecha', isRTL: false};
+ $.datepicker.setDefaults($.datepicker.regional['es']);
+  
+ //miDate: fecha de comienzo D=días | M=mes | Y=año
+ //maxDate: fecha tope D=días | M=mes | Y=año
+    $( "#datepicker" ).datepicker({ minDate: "-1D", maxDate: "+1M +10D" });
+  
+   $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 2,
+	  minDate: +1,
+	  onClose: function( selectedDate ) {
+	  	$( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 2,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+
+
+ 
+  </script>
+  
+
+</head>
+
+<body>
+<h1>Reserva</h1>
+<form  name="reserva" id="reserva" method="post" action="enviar-formulario.php">
+
+<p><label for="from">Destino</label>
+<input type="text" id="destino" name="destino" required></p>
+
+<p><label for="from">From</label>
+<input type="text" id="from" name="from" required></p>
+
+<p><label for="to">To</label>
+<input type="text" id="to" name="to" required></p>
+
+ <p><label for="send"></label>
+ <input type="submit" name="send" id="send" value="Send">
+ </p>
+</form>
+<p><a href="javascript:;" id="politica">Política de privacidad</a></p> <!--para el fancybox identificar y enlazar con javascript:;-->
+</body>
+</html

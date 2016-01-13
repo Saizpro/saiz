@@ -1,0 +1,52 @@
+.titulo{
+padding: 3% 0 0 0;
+}
+
+ul li{
+	float:left;
+	margin: 0 1%;
+	}
+h2{
+	
+}
+.menu{
+float:left;
+margin: 2% 2%;
+width: 45%;
+}
+form{
+margin: 3% 0 0 10%;
+}
+.row2{
+margin:2% 0 0 10%;
+}
+img{
+max-width: 100%;
+height:auto;
+}
+.camiseta{
+ width:90%;
+border:1px solid #FE9A2E;
+ margin-bottom: 4%;
+}
+.imgMost{
+width: 40%;
+ float:left;
+}
+.descMost{
+
+float:left;
+}
+.dos{
+margin: 5% 0 0 0;
+
+}
+
+#caja{
+border:1px solid #FE9A2E;
+width:200px;
+height:100px;
+float:right;
+position:fixed;
+margin: 1px 10px 0 700px;
+}

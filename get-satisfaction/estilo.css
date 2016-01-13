@@ -1,0 +1,9 @@
+body:first-child{
+	background-color: red;
+}
+body:nth-child(2){
+	background-color: green;
+}
+body:last-child{
+	background-color: blue;
+}

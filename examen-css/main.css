@@ -1,0 +1,184 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+article{
+    display: block;
+}
+label{
+    display: none;
+}
+h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 2em;
+    width: 350px;
+}
+a{
+    text-decoration: none;
+    color: black;   
+}
+article a{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 5px;
+}
+legend{
+    text-transform: uppercase;
+    text-align: center;
+}
+header img{
+    float: left;
+    width: 175px;
+}
+nav ul{ 
+    float: right;
+}
+nav ul li{
+    font-size: 0.8em;
+    display: inline-block;
+    text-transform: uppercase;
+    padding-right: 25px;
+}
+nav ul li:nth-child(5){
+    padding-right: 10px;
+}
+nav ul li:last-child a{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: darkgoldenrod;
+    color: white;
+}
+nav ul li:nth-child(5) a{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: white;
+}
+form[name="signup"]{
+    float:left;
+    margin-top: 5px;
+}
+form[name="signup"] legend{
+    width: 300px;
+}
+form[name="signup"] input{
+    display: block;
+    width: 300px;
+    margin-top: 5px;
+}
+form[name="signup"] input[type="submit"]{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px 50px 10px 50px;
+}
+.container{
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f3f3f3;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container:first-child{
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.title{
+    float: right;
+    margin-top: 25px;
+}
+.title p{
+    text-transform: uppercase;
+}
+.container2{
+    width: 700px;
+    margin: 0 auto;
+}
+.col3{
+    margin-top: 50px;
+    width: 31.2%;
+    float: left;
+    margin-bottom: 50px;
+}
+.col3 cite, .col3 blockquote{
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+.col3 cite{
+    padding-top: 210px;
+    padding-bottom: 20px;
+    font-style: normal;
+    width: 50%;     
+}
+.col3 blockquote{
+    font-size: 0.7em;
+    padding-bottom: 20px;
+    width: 75%;
+}
+.img1{
+    background-image: url(scottevest_01.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 200px;
+}
+.img2{
+    background-image: url(centraldesktop_01.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 200px;
+    margin-right: 22px;
+    margin-left: 22px;
+}
+.img3{
+    background-image: url(media-temple_04.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 200px;
+}
+.container3{
+    width:820px;
+    margin: 0 auto;
+}
+.container3 article{
+    display: inline-block;
+    width: 20%;
+}
+.container3 article a{
+    margin: 0;
+    width: 75%;  
+}
+.container3 cite{
+    padding-bottom: 20px;
+    font-style: normal;  
+}
+.container3 h2{
+    margin-top: 15px;
+    word-spacing: 1em;
+    line-height: 1.5em;
+}
+.container3 blockquote{
+    margin-top: 15px;
+    font-size: 0.6em;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+.container3 iframe{
+    display: inline-block;
+    width: 560px;
+    height: 225px;
+    float: right;
+    border: 0;
+}
+.clear{
+    clear: both;
+}
+

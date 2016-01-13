@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#dale").click(function(){
+            $("form").hide();
+            var url = 'https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg';
+            $("body").html("<img src=\"https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg\">"); 
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="num1">Primer número</label>
+        <input type="text" id="num1" name="num1">
+        <label for="num2">Segundo número</label>
+        <input type="text" id="num2" name="num2">   
+        <label for="num3">Tercer número</label>
+        <input type="text" id="num3">
+        <label for="num4">Cuarto número</label>
+        <input type="text" id="num4">
+        <input type="button" id="dale" value="dale">
+    </form>
+    </pre>
+
+</body>
+</html>

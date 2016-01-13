@@ -1,0 +1,64 @@
+/*
+
+Theme Name: ibeer
+Theme URI: http://wordpress.org/themes/twentyfifteen
+Version: 4.0
+Description: Tema hijo de MyProduct para hacer cambios sin riesgo
+Author: Semanticae
+Author URI: http://semanticae.es
+Template: ibeer
+
+*/
+
+ 
+
+@import url("../twentyfifteen/style.css");
+
+ 
+
+/*----------------- Empieza a añadir cambios aquí abajo -------------------------------*/
+
+a:hover,
+a:focus {
+	
+	color: #FF6666;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+	width: 28%;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	font-size: 75%;
+}
+
+#formulario label {
+	text-indent:;
+
+}
+#formulario input[type="submit"] {
+	width: 100px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	background-color: #000000;
+	font-size: 15px;
+	font-weight: lighter;
+	
+}
+input[type="text"],input[type="password"],input[type="email"],input[type="url"],textarea, select {
+	border: 1px solid #ccc;
+	padding: 6px 4px;
+	outline: none;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #777;
+	margin: 0;
+	width: 210px;
+	max-width: 100%;
+	display: block;
+	margin-bottom: 20px;
+	background: #fff; 
+}
+.bodycontacto{
+	
+}

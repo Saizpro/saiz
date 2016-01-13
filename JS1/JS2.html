@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#nombre").blur(function(){
+            var nombre = $("#nombre").val();
+            $("p").html("hola "+nombre);
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+    </form>
+        <p>
+            
+        </p>
+    </pre>
+
+</body>
+</html>

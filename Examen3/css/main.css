@@ -1,0 +1,79 @@
+h1 {
+    margin: 0 !important;
+    font-size: 1em;
+    vertical-align: middle;
+}
+footer{
+    background-color: #222;
+    border-color: #080808;
+    height: auto;
+    margin-top: 100px;
+}
+footer ul li{
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 4em;
+    padding-right: 30px;
+}
+footer h4{
+    color: darkcyan !important;
+}
+i span{
+    display: none;
+}
+.container>h2:first-child{
+    padding-top: 50px;
+}
+.autorizacion label{
+    font-size: 0.9em;
+}
+.autorizacion input{
+    display: inline;
+    margin: 5px;
+}
+.col-sm-4 div{
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-size: cover;
+}
+.col-sm-4 div div{
+    opacity: 0;
+    color: black;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 70px;
+    background-color:rgba(200,200,200,0.5);
+    width: auto;
+    transition: all 1s;
+}
+.col-sm-4 div:hover>div{
+    opacity: 1;
+}
+.foto-2014-1{
+    background-image: url(../images/2011_4_18_photogallery-0240405e35910409cdd2449b2c217c5d-1303152675-20.jpg);
+}
+.foto-2014-2{
+    background-image: url(../images/52d5259cf71b4cf4a0ab5d44c4985db0.jpg);
+}
+.foto-2014-3{
+    background-image: url(../images/Programa-semana-santa-marinera-love-valencia.jpg);
+}
+.foto-2013-1{
+    background-image: url(../images/pygx409.jpg);
+}
+.foto-2013-2{
+    background-image: url(../images/semana-santa-2016.jpg);
+}
+.foto-2013-3{
+    background-image: url(../images/Semana-Santa-Curiosity.jpg);
+}
+@media(max-width: 767px){
+    .container>h2:first-child{
+    padding-top: 175px;
+}
+}

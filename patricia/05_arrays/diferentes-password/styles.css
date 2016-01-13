@@ -1,0 +1,154 @@
+/**
+ * @author      Ignacio Pereda <cursophp2015@gmail.com>
+ * @copyright   (c) 2015, Ignacio Pereda.
+ * @license     CC-BY License - http://creativecommons.org/licenses/by/3.0/es/deed.es
+ */
+
+/***** Global *****/
+body {
+  font-family: Arial,Verdana,Helvetica,sans-serif;
+  font-size: 12px;
+  color: #666;
+  background: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.center, #container {
+  text-align: center;
+}
+.left, #container {
+  text-align: left;
+  margin-left: 10px;
+}
+.separa20, #container {
+  margin-top: 20px;
+}
+.separa10, #container {
+  margin-top: 10px;
+}
+
+header {
+  margin-bottom: 20px;
+  text-shadow: 0 .25em #ccc,0 0 8px rgba(255,255,255,.6);
+  border-bottom: 1px dotted #999;
+}
+
+footer {
+  margin-top: 30px;
+  font-size: 12px;
+  padding: 1px 10px;
+  clear: both;
+  border-top: 1px dotted #999;
+}
+
+.warning_block {
+  background-color: #f17a7a;
+  width: 340px;
+  color: #FFF;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  padding: 3px;
+  text-align: center;
+  border-radius: 3px;
+}
+.warning_block p {
+  font-size:.8em;
+}
+
+#result_frame {
+  margin-top: 20px;
+  width: 100%;
+  height: 475px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hidden{
+  display:none;
+}
+
+/***** Forms *****/
+form {
+  font-family: Arial, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+label {
+  display: in-line;
+}
+
+input {
+  margin: 6px;
+  height: 20px;
+  font-size: 14px;
+}
+input, textarea, select {
+  border: 1px solid #ccc;
+  color: #3F3F3F;
+  text-shadow: 0 1px 0 rgba(200, 200, 200, .6);
+  box-shadow: 1px 1px 4px #aaa inset;
+}
+input, textarea {
+  padding: 7px;
+}
+input, textarea, select, fieldset {
+  border-radius: 5px;
+}
+input[type=checkbox] {
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  vertical-align   : bottom;
+}
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+  border-color: rgba(82,168,236,.8);
+  box-shadow: 1px 1px 4px #aaa inset,0 0 8px rgba(82,168,236,.6);
+}
+input:focus {
+  background-position: 99%;
+  background-repeat: no-repeat;
+}
+input:focus:invalid {
+  background: red;
+  color:white;
+}
+input:focus:valid {
+  background: green;
+  color:white;
+}
+
+button {
+  background-color: #CCC;
+  border-radius: 5px;
+  margin-top: 20px ;
+  font-size: 18px;
+  font-weight: bold;
+  width: auto;
+  height: 35px;
+}
+button:hover {
+  background-color: #dadada;
+  border-radius: 5px;
+}
+
+/***** Links *****/
+a {
+  color: #08c;
+  outline-style: none;
+  cursor: pointer;
+}
+a:link, a:visited {
+  text-decoration: none;
+}
+a:hover, a:active {
+  text-decoration: underline;
+  text-shadow: 0 0 5px #fff,0 0 8px rgba(255,255,255,.6);
+}

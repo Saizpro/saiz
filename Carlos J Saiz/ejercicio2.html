@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 2</title>
+</head>
+<body>
+	<h1>Pedido camiseta</h1>
+	<form action="#" method="post" enctype="multipart/form-data" name="Pedido">
+	<fieldset name="camiseta">	
+		<legend>Datos de la camiseta</legend>
+		<input type="hidden" name="ref" id="ref" value="0001">
+		<label for="talla"></label>
+		<select id="talla" name="talla" autofocus>
+			<option value="0">Elige tu talla</option>
+			<option value="1">s</option>
+			<option value="2">m</option>
+			<option value="3">l</option>
+			<option value="4">xl</option>
+		</select>
+		<label for="color"></label>
+		<select id="color">
+			<option value="0">Elige color</option>
+			<option value="1">Rojo</option>
+			<option value="2">Verde</option>
+			<option value="3">Azul</option>
+		</select>
+		<input type="hidden" name="foto" id="foto" value="0001(color).jpg">
+		<img src="0001(color).jpg" alt="0001(color)" title="0001(color)">
+	</fieldset>
+	<fieldset name="cliente">	
+		<legend>Datos cliente</legend>
+		<label for="nombre"></label>
+		<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+		<label for="apellidos"></label>
+		<input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+		<label for="direccion"></label>
+		<input type="text" name="direccion" id="direccion" placeholder="Dirección">
+		<label for="provincia"></label>
+		<select id="provincia" name="provincia">
+			<option value="0">Selecciona provincia</option>
+			<option value="1">Teruel</option>
+			<option value="2">Zaragoza</option>
+			<option value="3">Huesca</option>
+		</select>
+		<label for="cp"></label>
+		<input type="text" name="cp" id="cp" placeholder="Código postal">
+	</fieldset>
+	<fieldset name="envio_pago">	
+		<legend>Datos de envío y forma de pago</legend>
+		<p><input type="radio" name="tipo_de_envio" id="correos"><label for="correos">Correos</label>
+		<input type="radio" name="tipo_de_envio" id="agencia_transporte"><label for="agencia_transporte">Agencia de transporte</label>
+		<input type="radio" name="tipo_de_envio" id="recoger_tienda"><label for="recoger_tienda">Recoger en tienda</label></p>
+		<p><input type="radio" name="forma_de_pago" id="tarjeta"><label for="tarjeta">Tarjeta</label>
+		<input type="radio" name="forma_de_pago" id="transferencia"><label for="transferencia">Transferencia bancaria</label>
+		<input type="radio" name="forma_de_pago" id="contrarrembolso"><label for="contrarrembolso">Contrarrembolso</label></p>
+	</fieldset>
+	<fieldset name="otros">
+		<legend>Otros datos</legend>
+		<p><label for="coleccion_comentarios">¿Cómo ves la nueva colección?</label></p>
+		<p><label for="coleccion_alegre"></label><input type="checkbox" name="coleccion" id="coleccion_alegre" value="alegre">Alegre
+		<label for="coleccion_divertida"></label><input type="checkbox" name="coleccion" id="coleccion_divertida" value="divertida">Divertida
+		<label for="coleccion_aburrida"></label><input type="checkbox" name="coleccion" id="coleccion_aburrida" value="aburrida">Aburrida
+		<label for="coleccion_desenfadada"></label><input type="checkbox" name="coleccion" id="coleccion_desenfadada" value="desenfadada">Desenfadada
+		<label for="coleccion_colorida"></label><input type="checkbox" name="coleccion" id="coleccion_colorida" value="colorida">Colorida
+		<label for="coleccion_juvenil"></label><input type="checkbox" name="coleccion" id="coleccion_juvenil" value="juvenil">Juvenil
+		<label for="coleccion_clasica"></label><input type="checkbox" name="coleccion" id="coleccion_clasica" value="clasica">Clásica<p>
+		<textarea name="coleccion_comentarios" id="coleccion_comentarios" placeholder="Comentarios sobre la colección"></textarea>
+		<p><label for="recibir_catalogo">Deseo recibir el catálogo en casa.</label>
+		<input type="checkbox" name="recibir_catalogo" id="recibir_catalogo" value="1" checked></p>
+	</fieldset>	
+		<label for="enviar"></label>
+		<input type="submit" name="enviar" id="enviar" value="enviar">
+	</form>
+</body>
+</html>
