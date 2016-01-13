@@ -1,0 +1,488 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mysqli_f",
+				"mysqli_fetch_array"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"fila_",
+				"fila_producto"
+			],
+			[
+				"mysl",
+				"mysql_fetch_lengths"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"preg_",
+				"preg_match"
+			],
+			[
+				"r",
+				"no-repeat"
+			],
+			[
+				"LIN",
+				"link	Tag"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"tit",
+				"title	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Users/acampo/Desktop/font-awesome-4.4.0/font-awesome-4.4.0/css/font-awesome.css",
+			"settings":
+			{
+				"buffer_size": 32318,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "main.css",
+			"settings":
+			{
+				"buffer_size": 1072,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 8344,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"contro",
+				"Package Control: Install Package"
+			],
+			[
+				"co",
+				"Package Control: Enable Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"c",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 258.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/vuelos/reset.css",
+		"/C/Users/acampo/Desktop/font-awesome-4.4.0/font-awesome-4.4.0/css/font-awesome.css",
+		"/C/wamp/www/vuelos/main.css",
+		"/C/wamp/www/vuelos/index.html",
+		"/C/wamp/www/medidas.html",
+		"/C/wamp/www/eric-meyer.css",
+		"/C/wamp/www/satisfaccion/css/normalize.css",
+		"/C/wamp/www/satisfaccion/index.html",
+		"/C/wamp/www/lafavorita/css/normalize.min.css",
+		"/C/Users/acampo/AppData/Roaming/Sublime Text 2/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/wamp/www/lafavorita/css/main.css",
+		"/C/Users/acampo/AppData/Roaming/Sublime Text 2/Packages/User/View In Browser.sublime-settings",
+		"/C/wamp/www/satisfaccion/prueba.html",
+		"/C/wamp/www/satisfaccion/main.css",
+		"/C/Users/acampo/Desktop/wmf/eventos.php",
+		"/C/Users/acampo/Desktop/wmf/footer.inc.php",
+		"/C/Users/acampo/Desktop/wmf/menu-escritorio.inc.php",
+		"/C/Users/acampo/Desktop/wmf/social.inc.php",
+		"/C/wamp/www/wmf/cabecera.inc.php",
+		"/C/Users/acampo/Desktop/imagenes/mapa-imagen/ejemplo.html",
+		"/C/Users/acampo/Desktop/imagenes/videos/eh5v.html",
+		"/C/Users/acampo/Desktop/planetas.html",
+		"/C/Users/acampo/Desktop/manual-xhtml/sobre-mi.html",
+		"/C/Users/acampo/Desktop/colgroup.html",
+		"/C/Users/acampo/Desktop/hola-mundo.html",
+		"/C/Users/acampo/Desktop/ejercicio2.txt",
+		"/C/Users/acampo/Desktop/svg.html",
+		"/C/wamp/www/000000_ayerbe_casa_rural/wp-content/themes/ayerbe-rural/style.css",
+		"/C/wamp/www/0000tienda/index.php",
+		"/C/wamp/www/0000tienda/cabecera.inc.php",
+		"/C/wamp/www/practica15/index.html",
+		"/C/wamp/www/000000_ayerbe_casa_rural/wp-content/themes/twentyfifteen/header.php",
+		"/C/wamp/www/000000_ayerbe_casa_rural/wp-content/themes/pinboard/header.php",
+		"/C/wamp/www/000000_ayerbe_casa_rural/wp-content/themes/ayerbe-rural/functions.php",
+		"/C/wamp/www/0000tienda/carrito-proceso.php",
+		"/C/wamp/www/0000tienda/confirmar-pedido.php",
+		"/C/wamp/www/0000tienda/comprar.php",
+		"/C/wamp/www/0000tienda/datos-cliente.php",
+		"/C/wamp/www/0000tienda/paypalfunctions (2).php",
+		"/C/wamp/www/0000tienda/expresscheckout (2).php",
+		"/C/wamp/www/0000tienda/producto.php",
+		"/C/wamp/www/0000tienda/css/main.css",
+		"/C/wamp/www/0000tienda/mensajes.inc.php",
+		"/C/wamp/www/0000tienda/conexion.inc.php",
+		"/C/wamp/www/0000tienda/expresscheckout (1).php",
+		"/C/wamp/www/0000tienda/expresscheckout.php",
+		"/C/wamp/www/0000tienda/paypalfunctions.php",
+		"/C/wamp/www/0000tienda/paypalfunctions (1).php",
+		"/C/wamp/www/0000tienda/css/skeleton.css",
+		"/C/wamp/www/0000tienda/admin/cabecera.inc.php",
+		"/C/wamp/www/0000tienda/admin/modificar-form.php",
+		"/C/wamp/www/0000tienda/css/normalize.css",
+		"/C/wamp/www/0000tienda/admin/modificar-proceso.php",
+		"/C/wamp/www/0000tienda/admin/insertar-form.php",
+		"/C/wamp/www/0000tienda/admin/insertar-proceso.php",
+		"/C/wamp/www/0000tienda/admin/ver-productos.php",
+		"/C/wamp/www/Examen15mayo/EXAMEN-ADRIAN-ARBIZU/Ejercicio-4/welcome.php",
+		"/C/wamp/www/Examen15mayo/EXAMEN-ADRIAN-ARBIZU/Ejercicio-4/aficiones.php",
+		"/C/wamp/www/0000tienda/js/main.js",
+		"/C/wamp/www/joomla2015/configuration-hostinger.php",
+		"/C/wamp/www/0000tienda/materiales/jQuery-File-Upload-9.9.3/basic.html",
+		"/C/wamp/www/cursophp/registro-usuarios/index.php",
+		"/C/wamp/www/cursophp/registro-usuarios/js/jquery.validate.js",
+		"/C/wamp/www/cursophp/registro-usuarios/css/skeleton.css",
+		"/C/wamp/www/cursophp/registro-usuarios/css/main.css",
+		"/C/wamp/www/cursophp/registro-usuarios/politica.html",
+		"/C/wamp/www/cursophp/registro-usuarios/proceso-login.php",
+		"/C/wamp/www/cursophp/phpmailer-con-ajax/gmail.php",
+		"/C/wamp/www/cursophp/phpmailer-con-ajax/contacto.html",
+		"/C/wamp/www/cursophp/suma.php",
+		"//Winfomento/web/EjemplosPhp2015/24-phpmailer-con-ajax/contacto.html",
+		"/C/wamp/www/cursophp/phpmailer-con-ajax/serialize.php",
+		"/C/wamp/www/cursophp/PHPMailer-master - copia (2)/contacto.html",
+		"/C/wamp/www/cursophp/suma-proceso.php",
+		"/C/wamp/www/cursophp/suma.css",
+		"/C/wamp/www/cursophp/main.js",
+		"/C/wamp/www/cursophp/examen/pablo smorto/EJERCICIO3.PHP",
+		"/C/wamp/www/cursophp/examen/Examen Sandra Nebra/tabla-suma.php",
+		"/C/wamp/www/cursophp/examen/examen_ignacio_pereda/examen1.php",
+		"/C/wamp/www/cursophp/examen/examen_ignacio_pereda/examen2/contacto.php",
+		"/C/wamp/www/cursophp/examen/examen_ignacio_pereda/examen2.php",
+		"/C/wamp/www/cursophp/examen/pablo smorto/EJERCICIO1.PHP",
+		"/C/wamp/www/cursophp/examen/examen_ignacio_pereda/examen2/inicio.php",
+		"/C/wamp/www/cursophp/examen/examen_ignacio_pereda/examen2/servicios.php",
+		"/C/wamp/www/cursophp/provincias.php",
+		"/C/wamp/www/cursophp/proceso-provincias.php",
+		"/C/wamp/www/0php/mysql/main.js",
+		"/C/wamp/www/cursophp/seleccionar-deseleccionar.php",
+		"/C/wamp/www/cursophp/conexion.inc.php",
+		"/C/wamp/www/cursophp/practica2-subir.php",
+		"/C/wamp/www/cursophp/opendir.php",
+		"/C/wamp/www/cursophp/practica2.php",
+		"/C/wamp/www/cursophp/registro-usuarios/registro.php",
+		"/C/wamp/www/cursophp/registro-usuarios/usuarios.txt",
+		"/C/wamp/www/cursophp/forzar-descarga-readfile/index.php",
+		"/C/wamp/www/cursophp/examen/Examen Sandra Nebra/index.php",
+		"/C/wamp/www/cursophp/sesion-cookie/index.php",
+		"/C/wamp/www/cursophp/sesion-cookie/proceso-login.php",
+		"/C/wamp/www/cursophp/formulario-funciones/cabecera.inc.php",
+		"/C/wamp/www/cursophp/formulario-funciones/cerrar-sesion.php",
+		"/C/wamp/www/cursophp/formulario-funciones/css/main.css",
+		"/C/wamp/www/cursophp/formulario-funciones/leercookie.php",
+		"/C/wamp/www/cursophp/setcookie.php",
+		"/C/wamp/www/cursophp/formulario-funciones/css/skeleton.css",
+		"/C/wamp/www/cursophp/funciones.php",
+		"/C/wamp/www/cursophp/mariajo/ejercicio2/servicios.php",
+		"/C/wamp/www/joomla-blackwhite/templates/it_blackwhite2/index.php",
+		"/C/wamp/www/cursophp/contacto-proceso.php",
+		"/C/wamp/www/cursophp/contacto.php",
+		"/C/wamp/www/cursophp/paginar-resultados.php",
+		"/C/wamp/www/cursophp/dias-semana-for.php",
+		"/C/wamp/www/cursophp/agenda.html",
+		"/C/wamp/www/cursophp/agenda-amigos.php",
+		"/C/wamp/www/cursophp/agenda.php",
+		"//Winfomento/web/jpereda/practica11.php",
+		"/C/wamp/www/cursophp/login/in-array-diferentes.php",
+		"/C/wamp/www/cursophp/login/login.php",
+		"/C/wamp/www/cursophp/login/entrar.php",
+		"/C/wamp/www/cursophp/login/login2.php",
+		"/C/wamp/www/cursophp/date-hoy.php",
+		"/C/wamp/www/cursophp/array-libros.php",
+		"/C/wamp/www/cursophp/probar-switch.php",
+		"/C/wamp/www/barpepe/txt/pie.inc.php",
+		"/C/wamp/www/barpepe/txt/cabecera.inc.php",
+		"/C/wamp/www/cursophp/p-01/gmail.php",
+		"/C/wamp/www/cursophp/p-01/venta.php",
+		"/C/wamp/www/barpepe/index.php",
+		"/C/wamp/www/barpepe/txt/contacto.php"
+	],
+	"find":
+	{
+		"height": 53.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\acampo\\Desktop\\estudiocamaleonweb"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"star",
+			"start",
+			"  <",
+			"ra15",
+			"`",
+			"total",
+			"margin",
+			"row",
+			"is required",
+			"SIDE",
+			"\">",
+			"mail",
+			"CREATE TABLE IF NOT EXISTS `wp",
+			"wp_post",
+			"wp_postmeta",
+			"post_meta",
+			"SHOW TABLE STATUS FROM `db394582098` LIKE 'wp_comments'",
+			"></",
+			"www.estudiocamaleon.com"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/acampo/Desktop/font-awesome-4.4.0/font-awesome-4.4.0/css/font-awesome.css",
+					"settings":
+					{
+						"buffer_size": 32318,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								738,
+								933
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 414.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "main.css",
+					"settings":
+					{
+						"buffer_size": 1072,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 8344,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								490,
+								488
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

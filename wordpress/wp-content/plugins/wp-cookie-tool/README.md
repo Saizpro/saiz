@@ -1,1 +1,0 @@
-# Plugin WordPress para cumplir la ley de cookies
