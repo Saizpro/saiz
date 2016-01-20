@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        h1, p, ul, li{
+            text-align: center;
+        }
+        p{
+            font-size: 1.5em;
+        }
+        #ul1{
+            display: none;
+        }
+        #ul1>li{
+            list-style: none;
+            
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        i = 1;
+        $("#p1").click(function(){
+            var contenido = $("#p1").text();
+            if (contenido == "Sustituye el contenido."){
+                $("#p1").html("Contenido sustituido. Pulsa para volver a sustituir.");
+            }else{
+                $("#p1").html("Sustituye el contenido.");
+            }       
+        });
+        
+        $("#p2").click(function(){
+            $("#p2").append(" Contenido.");
+        });    
+        
+        $("#p3").click(function(){
+            $("#p3").prepend("Contenido. ");
+        });        
+        
+        $("#p4").click(function(){
+            $("#p4").after("Contenido. ");
+        });    
+        
+        $("#p5").click(function(){
+            $("#p5").before("Contenido. ");
+        });    
+        
+        $("#p6").click(function(){
+            i++;
+                if(i%3 == 0){
+                    $("#p6").css({"background-color":"red","color":"cyan"});
+                }else if(i%3 == 1){
+                    $("#p6").css({"background-color":"green","color":"magenta"});
+                }else if(i%3 == 2){
+                    $("#p6").css({"background-color":"blue","color":"yellow"});
+                }
+        });
+        $("#p7").click(function(){
+            $("body").html("<img src=\"https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg\">"); 
+        });
+        $("#p9").click(function(){
+            var texto;
+            texto = $("#p9").text();
+            $("#p8").toggle(200);
+            if(texto == "Ocultar."){
+                $("#p9").text("Mostrar.")
+            }else{
+                $("#p9").text("Ocultar.")    
+                }
+        });
+        $("#p10").click(function(){
+            var pliegue;
+            pliegue = $("#p10").text();
+            $("#ul1").slideToggle("slow");
+            if(pliegue == "Desplegar."){
+                $("#p10").text("Plegar.")
+            }else{
+                $("#p10").text("Desplegar.")    
+            }
+        });        
+    });
+    </script>
+</head>
+<body>
+
+   <pre >
+       <h1>Pulsa sobre cualquier parrafo para interactuar.</h1>
+        <p id="p1">Sustituye el contenido.</p>
+        <p id="p2">Añade contenido al final de este texto.</p>
+        <p id="p3">Añade contenido al principio de este texto.</p>
+        <p id="p4">Añade contenido después del texto.</p>
+        <p id="p5">Añade contenido antes del texto.</p>
+        <p id="p6">Cambia el color de fondo de este texto.</p>
+        <p id="p7">NO TOQUES ESTE TEXTO.</p>
+        <p id="p8">Parrafo a ocultar o mostrar.</p>
+        <p id="p9">Ocultar.</p>
+        <p id="p10">Desplegar.</p>
+            <ul id="ul1">
+                <li>Elemento 1.</li>
+                <li>Elemento 2.</li>
+                <li>Elemento 3.</li>
+                <li>Elemento 4.</li>
+                <li>Elemento 5.</li>
+            </ul>
+    </pre>
+
+
+</body>
+</html>

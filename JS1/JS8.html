@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#dale").click(function(){
+            var dia    = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+            var valor1 = $("#num1").val();
+            var valor2 = $("#num2").val();
+            var valor3 = $("#num3").val();
+            var fecha  = new Date(valor3, valor2-1, valor1);
+            var diaHoy = fecha.getDay();
+            var diaSem = dia[diaHoy];
+            
+            $("#res").val(diaSem);
+            
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="num1">Día</label>
+        <input type="number" id="num1" name="num1">
+        <label for="num2">Mes</label>
+        <input type="number" id="num2" name="num2">   
+        <label for="num3">Año</label>
+        <input type="number" id="num3">
+        <label for="res">Resultado</label>
+        <input type="text" id="res">
+        <input type="button" id="dale" value="dale">
+    </form>
+    </pre>
+
+</body>
+</html>

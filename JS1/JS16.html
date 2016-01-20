@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#validar").click(function(){
+           var n = $("#usuario").val();
+           var t = /\d/.test(n);
+            if (t==false){
+                res = "Muy bien";
+                css = "3px solid green";
+            }if (t==true){
+                res = "Muy mal";
+                css = "3px solid red";
+            }
+        $("#resultado").val(res);
+        $("#usuario").css("border",css);
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario">
+        <label for="resultado">Resultado</label>
+        <input type="text" id=resultado disabled>
+        <label for="validad">Validar</label>
+        <input type="button" id="validar" value="validar">
+    </form>
+    </pre>
+
+</body>
+</html>

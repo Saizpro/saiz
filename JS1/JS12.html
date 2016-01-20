@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var text = "";
+        var i    = 1;
+        while ( i <= 5 ){
+            text += "<tr><td>Celda "+i+"</td></tr>";
+            i++;
+        }
+        $("table").html(text);
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <table border=1>
+    </table>
+    </pre>
+
+
+</body>
+</html>

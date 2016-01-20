@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#dale").click(function(){
+            var valor1 = $("#num1").val();
+            var valor2 = $("#num2").val();
+            var valor3 = $("#num3").val();
+            var min    = Math.min(valor1, valor2, valor3);
+            var max    = Math.max(valor1, valor2, valor3);
+            $("#min").val(min);
+            $("#max").val(max);
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="num1">Primer número</label>
+        <input type="text" id="num1" name="num1">
+        <label for="num2">Segundo número</label>
+        <input type="text" id="num2" name="num2">   
+        <label for="num3">Tercer número</label>
+        <input type="text" id="num3">
+        <label for="max">Mayor</label>
+        <input type="text" id="max">
+        <label for="min">Menor</label>
+        <input type="text" id="min">
+        <input type="button" id="dale" value="dale">
+    </form>
+    </pre>
+
+</body>
+</html>

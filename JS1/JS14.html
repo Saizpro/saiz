@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#validar").click(function(){
+            var usuarios = ["usuario1", "usuario2", "usuario3", "usuario4"];
+            var user     = $("#usuario").val();
+            var pass     = $("#pass").val();
+            var res      = "";  
+            var maximo   = usuarios.length-1;
+            var i;
+            for (i in usuarios){
+                if (usuarios[i]==user && pass=="Web2015"){
+                    res = "Usuario válido";
+                    break;
+                }
+                if (maximo==i && usuarios[i]!=user){
+                    res = "Usuario no válido";
+                }
+            }
+        $("#resultado").val(res);
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario">
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" name="pass">   
+        <label for="resultado">Resultado</label>
+        <input type="text" id=resultado disabled>
+        <label for="validad">Validar</label>
+        <input type="button" id="validar" value="validar">
+    </form>
+    </pre>
+
+</body>
+</html>

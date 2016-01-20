@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#dale").click(function(){
+            var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+            var dni    = $("#num1").val();
+            var ult    = dni.length-1;
+            var letra  = (dni.charAt(ult)).toUpperCase();
+            var num    = dni.substring(ult,0);
+            var resto  = num%23;
+            
+            if (letra==letras[resto]){
+                var res = "Correcto";
+            }else if (dni==1){
+                var res = "Hola Franco";
+            }
+            else{
+                var res = "Estafador";
+            }
+            $("#res").val(res);
+        });
+        $("#no_tocar").click(function(){
+            $("form").hide();
+            $("body").html("<img src=\"https://i.ytimg.com/vi/aslxfM0T8No/maxresdefault.jpg\">"); 
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <form name="form" id="form">
+        <label for ="num1">DNI</label>
+        <input type="text" id="num1" name="num1">
+        <label for ="res">Resultado</label>
+        <input type="text" id="res"><br><br>
+        <input type="button" id="dale" value="dale"><br><br><br><br>
+        <input type="button" id="no_tocar" value="no tocar">
+    </form>
+    </pre>
+
+
+</body>
+</html>

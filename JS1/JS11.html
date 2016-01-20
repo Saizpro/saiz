@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#colores").change(function(){
+            var res = $("#colores").val();
+    
+            $("body").css("background-color",res);
+        });
+    });
+    </script>
+</head>
+<body>
+
+   <pre>
+    <select name="colores" id="colores">
+        <option value="red">  Rojo </option>
+        <option value="green">Verde</option>
+        <option value="blue"> Azul </option>
+    </select>
+    </pre>
+
+
+</body>
+</html>
