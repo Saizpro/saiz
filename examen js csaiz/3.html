@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#cambiar").click(function(){
+            var img;
+            var text;
+            img = $("img").attr("src");
+            if(img == "http://1.bp.blogspot.com/-tCxN9rkfpfs/UIv_1aeRkdI/AAAAAAAAC3w/HwxuWVGiJmE/s1600/WhiteObama.jpg"){
+                $("img").attr("src", "https://cutthroathippiegang.files.wordpress.com/2015/02/d8904-924758_1598177970403883_458237005_n.jpg?w=812");
+                $("#cambiar").val("blanco");
+            }else{
+                $("img").attr("src", "http://1.bp.blogspot.com/-tCxN9rkfpfs/UIv_1aeRkdI/AAAAAAAAC3w/HwxuWVGiJmE/s1600/WhiteObama.jpg")
+                $("#cambiar").val("negro");
+            }
+        });
+        });    
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<img height="640" width="640" src="http://1.bp.blogspot.com/-tCxN9rkfpfs/UIv_1aeRkdI/AAAAAAAAC3w/HwxuWVGiJmE/s1600/WhiteObama.jpg">
+<input type="button" id="cambiar" value="negro">
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!doctype html>  
+<html lang="es">  
+<head>  
+<meta charset="utf-8">  
+<title>jQuery</title> 
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+<script> 
+$(document).ready(function(){ 
+    var i   = 0;
+    $("button").click(function(){ 
+        /*var j   = 0;
+        var wid = 0;
+        i++;
+        while(j<=i){
+        wid = wid +240;
+        j++;    
+        }*/
+        $("table").width(function(indice,valor){
+            while(indice == 1){
+           return parseInt(valor)+100; 
+            }
+        });
+        $("table").height(function(indice,valor){
+           return parseInt(valor)+100; 
+        });
+    }); 
+}); 
+</script>
+<style>  
+table { border-collapse: collapse;  
+        border: 1px solid black;}  
+td { text-align: center;  
+     border: 1px solid black;}  
+</style>  
+</head>  
+<body>  
+<p><button>Agrandar la tabla</button></p>  
+<table>  
+<tr>  
+<td>1</td><td>2</td><td>3</td>  
+</tr>  
+<tr>  
+<td>4</td><td>5</td><td>6</td>  
+</tr>  
+<tr>  
+<td>7</td><td>8</td><td>9</td>  
+</tr>  
+</table>  
+<table>  
+<tr>  
+<td>1</td><td>2</td><td>3</td>  
+</tr>  
+<tr>  
+<td>4</td><td>5</td><td>6</td>  
+</tr>  
+<tr>  
+<td>7</td><td>8</td><td>9</td>  
+</tr>  
+</table>  
+</body>  
+</html>

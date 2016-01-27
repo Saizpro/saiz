@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var i = 0;
+            $(".añadir").click(function(){
+                var curso       = $("#curso").val();
+                var lugar       = $("#lugar").val();
+                var horario_pro = $("#horario").val();
+                var año         = $("#año").val();
+                var horario_def;
+                i++;
+                if(horario_pro == 0){
+                    horario_def = "Mañana";
+                }else if(horario_pro == 1){
+                    horario_def = "Tarde";
+                }else if(horario_pro == 2){
+                    horario_def = "Partido";
+                }else{
+                    horario_def = "Teleformación";
+                }
+                $(".añadir").hide();
+                $("fieldset").append("<label for=\"curso"+i+"\">Curso</label> <input type=\"text\" id=\"curso"+i+"\" name=\"curso"+i+"\">  <label for=\"lugar"+i+"\">Lugar</label> <input type=\"text\" id=\"lugar"+i+"\" name=\"lugar"+i+"\"> <label for=\"horario"+i+"\">Horario</label> <select name=\"horario"+i+"\" id=\"horario"+i+"\"><option value=\"0\">Mañana</option><option value=\"1\">Tarde</option><option value=\"2\">Partido</option><option value=\"3\">Teleformación</option></select> <label for=\"año"+i+"\">Año</label> <input type=\"text\" id=\"año"+i+"\" name=\"año"+i+"\"><span class=\"añadir_nuevo\">Añadir curso</span><br>")
+                $(".resultados table").append("<tr><td>"+curso+"</td><td>"+lugar+"</td><td>"+horario_def+"</td><td>"+año+"</td></tr>")
+            });  
+            $("fieldset").on("click", ".añadir_nuevo", function(){
+                if (i<5){
+                var curso       = $("#curso").val();
+                var lugar       = $("#lugar").val();
+                var horario_pro = $("#horario").val();
+                var año         = $("#año").val();
+                var horario_def;
+                i++;
+                if(horario_pro == 0){
+                    horario_def = "Mañana";
+                }else if(horario_pro == 1){
+                    horario_def = "Tarde";
+                }else if(horario_pro == 2){
+                    horario_def = "Partido";
+                }else{
+                    horario_def = "Teleformación";
+                }
+                $(".añadir_nuevo").remove();
+                $("fieldset").append("<label for=\"curso"+i+"\">Curso</label> <input type=\"text\" id=\"curso"+i+"\" name=\"curso"+i+"\">  <label for=\"lugar"+i+"\">Lugar</label> <input type=\"text\" id=\"lugar"+i+"\" name=\"lugar"+i+"\"> <label for=\"horario"+i+"\">Horario</label> <select name=\"horario"+i+"\" id=\"horario"+i+"\"><option value=\"0\">Mañana</option><option value=\"1\">Tarde</option><option value=\"2\">Partido</option><option value=\"3\">Teleformación</option></select> <label for=\"año"+i+"\">Año</label> <input type=\"text\" id=\"año"+i+"\" name=\"año"+i+"\"><span class=\"añadir_nuevo\">Añadir curso</span><br>")
+                $(".resultados table").append("<tr><td>"+curso+"</td><td>"+lugar+"</td><td>"+horario_def+"</td><td>"+año+"</td></tr>")  
+                }
+            });
+        });    
+    </script>
+</head>
+<body>
+
+<form action="">
+    <fieldset>
+       <legend>Cursos realizados</legend>  
+        <label for="curso">Curso</label>
+        <input type="text" id="curso" name="curso">
+        <label for="lugar">Lugar</label>
+        <input type="text" id="lugar" name="lugar">
+        <label for="horario">Horario</label>
+        <select name="horario" id="horario">
+            <option value="0">Mañana</option>
+            <option value="1">Tarde</option>
+            <option value="2">Partido</option>
+            <option value="3">Teleformación</option>
+        </select>
+        <label for="año">Año</label>
+        <input type="text" id="año" name="año">
+        <span class="añadir">Añadir curso</span><br>
+    </fieldset>     
+        <label for="enviar">Enviar</label>
+        <input type="button" name="enviar" value="enviar">
+</form>
+<div class="resultados">
+    <table border="1">
+        <tr><td>Curso</td><td>Lugar</td><td>Horario</td><td>Año</td></tr>
+    </table>
+</div>
+</body>
+</html>

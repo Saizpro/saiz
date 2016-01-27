@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#calcular").click(function(){
+            var fechaHoy = $.now()/31536000000;
+            var añoCumple = parseInt($("#año").val());
+            var mesCumple = parseInt($("#mes").val());
+            var diaCumple = parseInt($("#dia").val());
+            var fechaCumple = new Date(añoCumple, mesCumple, diaCumple);
+            var mili = (fechaCumple.getTime())/31536000000;  
+            var tusAños;    
+                if(mili<0){
+                    mili = mili * (-1);
+                    tusAños = Math.floor(mili + fechaHoy);
+                }else{
+                    tusAños = Math.floor(fechaHoy - mili);
+                }
+                alert(mili);
+                alert(fechaHoy);
+                alert(tusAños);
+                $("div").text(tusAños);
+            });    
+        });    
+    </script>
+    <style>
+
+    </style>
+</head>
+<body>
+
+<form action="">
+    <label for="dia">Dia</label>
+    <input type="text" id="dia" name="dia">
+    <label for="mes">Mes</label>
+    <input type="text" id="mes" name="mes">
+    <label for="">Año</label>
+    <input type="text" id="año" name="año">
+    <label for="calcular">Calcular</label>
+    <input type="button" name="calcular" id="calcular" value="calcular">
+</form>
+    <div>
+        
+    </div>
+</body>
+</html>

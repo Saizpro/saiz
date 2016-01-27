@@ -1,0 +1,53 @@
+<!doctype html>  
+<html lang="es">  
+<head>  
+<meta charset="utf-8">  
+<title>jQuery</title> 
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script> 
+$(document).ready(function(){ 
+    $("#go").click(function () { 
+        var pos = $("p:last-child").position();
+        $("div").scrollTop(pos["top"]); 
+    }); 
+    $("#reset").click(function () { 
+        $("div").scrollTop(0); 
+    }); 
+}); 
+</script> 
+<style>  
+div { position: relative;  
+      width: 250px;  
+      height: 130px;  
+      border: 1px solid black;  
+      margin-top: 10px;  
+      padding: 3px;  
+      font-size: 0.9em;  
+      overflow: auto;}  
+p { margin:2px;  
+    width:225px;  
+    text-align: justify;}  
+span { font-weight: bold;  
+       text-decoration: underline}  
+</style>  
+</head>  
+<body>  
+<button id="go">Ir al párrafo 2</button>  
+<button id="reset">Reset</button>  
+<div class="demo">  
+<p><span>Párrafo 1</span> Lorem ipsum dolor sit amet,  
+consectetur adipiscing elit. Integer id semper enim. Vestibulum  
+metus felis, elementum sit amet tristique non, pulvinar vitae  
+metus. Pellentesque interdum, felis non placerat volutpat, nisi  
+justo eleifend magna, at tincidunt massa velit non dolor</p>  
+<p><span>Párrafo 2</span> In sem velit, placerat vel vestibulum  
+vel, interdum at tortor. Suspendisse vitae metus sem, ut venenatis  
+eros. Sed iaculis dapibus diam, in tempor eros tincidunt in. Ut id  
+vestibulum risus. Integer eu mauris at odio pharetra convallis.  
+In sem velit, placerat vel vestibulum vel, interdum at tortor.  
+Suspendisse vitae metus sem, ut venenatis eros. Sed iaculis  
+dapibus diam, in tempor eros tincidunt in. Ut id vestibulum risus.  
+Integer eu mauris at odio pharetra convallis.</p>  
+</div>  
+</body>  
+</html>

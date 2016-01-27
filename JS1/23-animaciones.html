@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Números pares con for</title>
+    <style>
+        .demo{
+            background-color: brown;
+            color: white;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .botones{
+            clear: both;
+        }
+    </style>
+    <script src="jquery-1.12.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#anima").click(function(){
+        $("#alavez").animate({
+            fontSize: '2em',
+            width: '+=200',  
+            height: '-=30', 
+        }, "slow");
+        $("#unadetrasdelaotra").animate({fontSize: '2em'}, "slow");
+        $("#unadetrasdelaotra").animate({width: '+=200'}, "slow");
+        $("#unadetrasdelaotra").animate({height: '-=30'}, "slow");  
+    });
+});    
+
+    
+    
+</script>
+</head>
+<body>
+    <div id="alavez" class="demo"><p>Texto demo</p></div>
+    <div id="unadetrasdelaotra" class="demo"><p>Texto demo</p></div>
+    <div class="botones">
+    <button id="anima">Anima!</button>
+  
+    </div>
+</body>
+</html>
