@@ -1,6 +1,6 @@
 <?php
 if ($_POST[codigo]=="AA"){
-    echo "1";
+    echo "AA";
 }else{
     echo "0";
 }

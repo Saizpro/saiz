@@ -9,46 +9,35 @@
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/js.cookie.js"></script>
+   <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
     <script src="js/jquery.fancybox-buttons.js"></script>
     <script src="js/jquery.fancybox-thumbs.js"></script>
-    <script src="js/js.cookie.js"></script>
     <script>
         $(document).ready(function(){
-            $(".various").fancybox({
-		maxWidth	: 800,
-		maxHeight	: 600,
-		fitToView	: false,
-		width		: '70%',
-		height		: '70%',
-		autoSize	: false,
-		closeClick	: false,
-		openEffect	: 'none',
-		closeEffect	: 'none'
-	});
-            $(".btn").click(function(){
-                var codigo=$("#promocion").val();
-                $.post("comprobar-codigo.php",
-                    {
-                        codigo: codigo,
-                    },
-                function(data, status){
-                if(data==0){ 
-                    $("#promocion").after("<p>Código no válido</p>");
-                }else{
-                     Cookies.set('code', data);
-                     window.location="http://localhost/JS1/candanchu/producto.php";
+            var codigo = Cookies.get('code');
+            $(".codigo").after(": "+codigo+"<br>");
+            $(".caja").click(function(){
+                if($(".caja").hasClass("caja-selected")){
+                    $(".caja").removeClass("caja-selected");
                 }
-            return false;
-            });
-        });  
-        });     
+                $(this).addClass("caja-selected");
+                if($(this).hasClass("con-seguro")){
+                    $(".precio+span").remove();
+                    Cookies.set('precio', '31 euros');
+                }else if($(this).hasClass("sin-seguro")){
+                    $(".precio+span").remove();
+                    Cookies.set('precio', '25 euros');
+                }
+            $(".precio").after("<span>: "+Cookies.get('precio')+"</span>");
+            })
+        });       
     </script>
-    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent-->
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"http://i.dailymail.co.uk/i/pix/2013/09/22/article-0-18297CEF00000578-775_634x426.jpg","theme":"dark-bottom"};
 </script>
@@ -91,24 +80,59 @@
             background-color: whitesmoke;
             opacity: 1; 
         }
+        .caja{
+            cursor:pointer;
+        }
+        .caja, .caja2{
+            background-color: white;
+            border: 2px solid black;
+            text-align: center;
+            height: 50%;
+            font-size: 2em;
+        }
+        .caja-selected{
+            background-color: darkblue;
+            color: aliceblue;
+        }
+        a{
+            padding-bottom: 100px;
+        }
     </style>
 </head>
 <body>
 <div class="container-fluid">
     <div class="candanchu">
      <div class="titulo"> 
-         <h1>Promociones Candanchú</h1>
+         <h2>Su producto</h2>
      </div> 
-      <form class="form-signin form-codigo">
-       <h2>Introduzca su código promocional</h2>
-        <label for="promocion" class="sr-only">Introduzca su código promocional</label>
-        <input type="text" id="promocion" class="form-control" placeholder="Código promocional" autofocus>
-        <a class="various" data-fancybox-type="iframe" href="info.html">Más info</a>
-        <br><br>
-        <input type="button" class="btn btn-lg btn-primary btn-block" value="Comprobar">
-      </form>
+        <div class="caja sin-seguro">
+            <h3>2X1 promo alta 25</h3>
+            <b>Precio</b> 12,5€ <br>
+            <b>Descuento</b> 0,0€ -0% de ahorro. <br>
+            <b>Precio final</b> 12,5€ <br>
+        </div>
+        <div class="caja con-seguro">
+            <h3>2X1 promo alta 25+seguro</h3>
+            <b>Precio</b> 15,5€ <br>
+            <b>Descuento</b> 0,0€ -0% de ahorro. <br>
+            <b>Precio final</b> 15,5€ <br>
+        </div>
     </div>
+    
+        <div class="candanchu">
+     <div class="titulo"> 
+         <h2>Código promocional</h2>
+    </div>     
+        <div class="caja2">
+            <b class="codigo">Código</b>
+            <b class="precio">Precio</b>
+         </div> 
+         <a class="btn btn-lg btn-primary btn-block" href="datos.php">Continuar</a> 
+     </div>
+     
+
 </div>
+
  <footer>
      
  </footer>
