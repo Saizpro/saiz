@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Producto</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="http://cdn.imnjb.me/libs/jquery.cookiecuttr/1.0/cookiecuttr.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css">    
@@ -12,12 +12,15 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/js.cookie.js"></script>
-   <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
     <script src="js/jquery.fancybox-buttons.js"></script>
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script>
+        if(Cookies.get('code')==null){
+            window.location="http://localhost/JS1/candanchu/index.html";
+        }
         $(document).ready(function(){
             var codigo = Cookies.get('code');
             $(".codigo").after(": "+codigo+"<br>");
@@ -47,8 +50,9 @@
 
     <style>
         .container-fluid{
-            background-image: url(https://unavueltadeldestino.files.wordpress.com/2013/03/candanchu_paisaje.jpg);
+            background-image: url(http://assets.rollingstone.com/assets/1972/article/the-star-spangled-powder-19720817/181004/large_rect/1421278397/1401x788-468725721.jpg);
             height: auto;
+            background-size: cover;
         }
         .candanchu{
             margin: 0 auto;
@@ -58,6 +62,15 @@
             width: 90%;   
             background-color: rgba(240,240,240,0.5);
             height: 500px;
+        }
+        .candanchu2{
+            margin: 0 auto;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            display: block;
+            width: 90%;   
+            background-color: rgba(240,240,240,0.5);
+            height: 100px;
         }
         .titulo{
             height: 50px;
@@ -90,6 +103,9 @@
             height: 50%;
             font-size: 2em;
         }
+        .caja2{
+            height: 100%;
+        }
         .caja-selected{
             background-color: darkblue;
             color: aliceblue;
@@ -119,7 +135,7 @@
         </div>
     </div>
     
-        <div class="candanchu">
+        <div class="candanchu2">
      <div class="titulo"> 
          <h2>Código promocional</h2>
     </div>     

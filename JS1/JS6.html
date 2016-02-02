@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Mayor y menor</title>
+    <meta name="description" content="Detecta cual es el valor mayor y el menos de tres dados.">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("#dale").click(function(){
-            var valor1 = $("#num1").val();
-            var valor2 = $("#num2").val();
-            var valor3 = $("#num3").val();
-            var min    = Math.min(valor1, valor2, valor3);
-            var max    = Math.max(valor1, valor2, valor3);
-            $("#min").val(min);
-            $("#max").val(max);
+            $("#dale").click(function(){
+                var valor1 = $("#num1").val();
+                var valor2 = $("#num2").val();
+                var valor3 = $("#num3").val();
+                var min    = Math.min(valor1, valor2, valor3);
+                var max    = Math.max(valor1, valor2, valor3);
+                $("#min").val(min);
+                $("#max").val(max);
+            });
         });
-    });
     </script>
 </head>
 <body>

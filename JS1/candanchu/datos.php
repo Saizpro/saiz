@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Datos</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="http://cdn.imnjb.me/libs/jquery.cookiecuttr/1.0/cookiecuttr.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css">    
     <link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
     <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/js.cookie.js"></script>
-   <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
     <script src="js/jquery.fancybox-buttons.js"></script>
@@ -20,9 +20,9 @@
     <script>
         $(document).ready(function(){
             $("[name=forfait]").click(function(){
-                    $("fieldset").removeClass("sr-only");
+                    $(".forfi").removeClass("sr-only");
                 if($(this).val()=="no"){
-                    $("fieldset").addClass("sr-only");
+                    $(".forfi").addClass("sr-only");
                 }
             })
             $("[name=envio]").click(function(){
@@ -31,6 +31,9 @@
                     $(".dire").addClass("sr-only");
                 }
             })
+            $(".forfait_precio").after("<span>: "+Cookies.get('precio')+"</span><br>");
+            $(".fianza").after("<span>: "+6+" euros</span><br>");
+            $(".total").after("<span>: "+(parseInt(Cookies.get('precio'))+6)+"euros</span><br>");
         });       
     </script>
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent-->
@@ -43,8 +46,9 @@
 
     <style>
         .container-fluid{
-            background-image: url(https://unavueltadeldestino.files.wordpress.com/2013/03/candanchu_paisaje.jpg);
+            background-image: url(http://assets.rollingstone.com/assets/1972/article/the-star-spangled-powder-19720817/181004/large_rect/1421278397/1401x788-468725721.jpg);
             height: auto;
+            background-size: cover;
         }
         .candanchu{
             margin: 0 auto;
@@ -53,7 +57,16 @@
             display: block;
             width: 90%;   
             background-color: rgba(240,240,240,0.5);
-            height: 500px;
+            height: 519px;
+        }
+        .candanchu2{
+            margin: 0 auto;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            display: block;
+            width: 90%;   
+            background-color: rgba(240,240,240,0.5);
+            height: 150px;            
         }
         .titulo{
             height: 50px;
@@ -76,9 +89,6 @@
             background-color: whitesmoke;
             opacity: 1; 
         }
-        .caja{
-            cursor:pointer;
-        }
         .caja, .caja2{
             background-color: white;
             border: 2px solid black;
@@ -99,37 +109,57 @@
             display: inline;
             margin: 20px;
         }
+        .form-control{
+            width: 50%;
+            margin: 0 auto;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
 <div class="container-fluid">
-     
+     <div class="candanchu2">
+         <div class="titulo"> 
+             <h2>Productos</h2>
+        </div>
+            <div class="caja">
+                <b class="forfait_precio">Forfait</b>
+                <b class="fianza">Fianza</b>
+                <b class="total">Total</b>
+            </div>
+    </div>     
    <div class="candanchu">
      <div class="titulo"> 
          <h2>Tus datos</h2>
     </div>     
-        <div class="caja2">
+        <div class="caja2 form-group">
             <form action="">
-                <label for="dni">DNI </label> <input type="text"><br>
+                <label class="sr-only" for="dni">DNI </label><input class="form-control" type="text" name="dni" id="dni" placeholder="DNI">
+                 <label class="sr-only" for="email">Email</label><input class="form-control" type="email" name="email" id="email" placeholder="Email">
+                <label class="sr-only" for="nombre">Nombre</label><input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                <label class="sr-only" for="apellido">Apellido</label><input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellidos">
+                <label class="sr-only" for="cp">Código postal</label><input class="form-control" type="number" name="cp" id="cp" placeholder="Código postal">
                 <label for="envio">Envío a mi domicilio</label>
                 <input type="radio" id="envio" name="envio" value="si"><br>
                 <label for="no_envio">Recoger en la estación</label>
                 <input type="radio" id="no_envio" name="envio" value="no"><br>
-                <div class="sr-only dire">
-                <label for="direccion">Inserta tu dirección</label><input type="text" name="direccion" id="direccion">
-                </div>
+            <fieldset class="sr-only dire">
+                <label class="sr-only" for="direccion">Inserta tu dirección</label><input class="form-control" type="text" name="direccion" id="direccion" placeholder="Dirección">
+                <label class="sr-only" for="telefono">Teléfono</label><input class="form-control" type="number" name="telefono" id="telefono" placeholder="Teléfono">
+            </fieldset>
                 <div class="cincuenta btn btn-lg btn-primary btn-block">
-                <label for="forfait">Tengo forfait</label>
+                <label  for="forfait">Tengo forfait</label>
                 <input class="sr-only" type="radio" id="forfait" name="forfait" value="si">
                 </div>
                 <div class="cincuenta btn btn-lg btn-primary btn-block">
                 <label for="no_forfait">No tengo forfait</label>
                 <input class="sr-only" type="radio" id="no_forfait" name="forfait" value="no">
                 </div>
-                <br>
-                <fieldset class="sr-only">
-                    <label for="numero_forfait">Inserta tu forfait</label> <input type="number" id="numero_forfait" name="numero_forfait">
-                </fieldset>
+            <fieldset class="sr-only forfi">
+                    <label class="sr-only" for="numero_forfait">Inserta tu forfait</label> <input class="form-control" type="number" id="numero_forfait" name="numero_forfait" placeholder="Inserta tu forfait">
+            </fieldset>
             </form>
          </div> 
          <a class="btn btn-lg btn-primary btn-block" href="datos.php">Continuar</a> 

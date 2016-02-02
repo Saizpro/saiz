@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Día de la semana</title>
+    <meta name="description" content="Nos da el día de la semana introduciendo día, mes y año.">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
     $(document).ready(function(){
@@ -11,12 +12,10 @@
             var valor1 = $("#num1").val();
             var valor2 = $("#num2").val();
             var valor3 = $("#num3").val();
-            var fecha  = new Date(valor3, valor2-1, valor1);
-            var diaHoy = fecha.getDay();
-            var diaSem = dia[diaHoy];
-            
-            $("#res").val(diaSem);
-            
+            var fecha  = new Date(valor3, valor2-1, valor1); //Creamos una variable fecha con los datos introducidos. El mes al ser de 0 a 11 se le resta 1 al valor introducido por el usuario.
+            var diaHoy = fecha.getDay(); //Extrae el día de la semana en número del 0 al 6 
+            var diaSem = dia[diaHoy];            
+            $("#res").val(diaSem);            
         });
     });
     </script>

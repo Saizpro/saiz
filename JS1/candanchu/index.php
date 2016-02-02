@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Promocional</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="http://cdn.imnjb.me/libs/jquery.cookiecuttr/1.0/cookiecuttr.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="css/jquery.fancybox.css">    
@@ -58,8 +58,9 @@
 
     <style>
         .container-fluid{
-            background-image: url(https://unavueltadeldestino.files.wordpress.com/2013/03/candanchu_paisaje.jpg);
+            background-image: url(http://assets.rollingstone.com/assets/1972/article/the-star-spangled-powder-19720817/181004/large_rect/1421278397/1401x788-468725721.jpg);
             height: auto;
+            background-size: cover;
         }
         .candanchu{
             margin: 0 auto;
