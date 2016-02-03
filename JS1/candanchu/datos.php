@@ -12,6 +12,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="js/js.cookie.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/jquery.fancybox-media.js"></script>
@@ -19,6 +20,35 @@
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script>
         $(document).ready(function(){
+            $("#formulario").validate({
+                errorContainer: ".error",
+                focusCleanup: true,
+                errorClass: "invalid",
+                validClass: "success",
+                onkeyup: false,
+                rules: {
+                    dni: {
+                        required: true,
+                        rangelength: [9]
+                    },
+                    cp: {
+                        required: true,
+                        number: true,
+                        rangelength: [5]
+                    },
+                    
+                },
+                messages: {
+                    nombre: "Por favor especifica tu nombre",
+                    email : {
+                           required: "Por favor, inserta tu correo electrónico",
+                           email: "Tu correo debe de tener la esructura nombre@dominio.com"
+                    },
+                    cp:{
+                        rangelength: jQuery.validator.format("Tienes que introducir {0} caracteres")
+                    }
+                }
+            });
             $("[name=forfait]").click(function(){
                     $(".forfi").removeClass("sr-only");
                 if($(this).val()=="no"){
@@ -57,7 +87,7 @@
             display: block;
             width: 90%;   
             background-color: rgba(240,240,240,0.5);
-            height: 519px;
+            height: 1000px;
         }
         .candanchu2{
             margin: 0 auto;
@@ -116,6 +146,20 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        input[type=submit]{
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 150px !important;
+        }
+        .success{
+            border: 3px solid palegreen;
+        }
+        .invalid{
+            border: 3px solid indianred;
+        }
+        label.invalid{
+            display: none !important;
+        }
     </style>
 </head>
 <body>
@@ -135,34 +179,34 @@
          <h2>Tus datos</h2>
     </div>     
         <div class="caja2 form-group">
-            <form action="">
-                <label class="sr-only" for="dni">DNI </label><input class="form-control" type="text" name="dni" id="dni" placeholder="DNI">
-                 <label class="sr-only" for="email">Email</label><input class="form-control" type="email" name="email" id="email" placeholder="Email">
-                <label class="sr-only" for="nombre">Nombre</label><input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <label class="sr-only" for="apellido">Apellido</label><input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellidos">
-                <label class="sr-only" for="cp">Código postal</label><input class="form-control" type="number" name="cp" id="cp" placeholder="Código postal">
+            <form action="#" id="formulario">
+                <label class="sr-only" for="dni">DNI </label><input class="form-control" type="text" name="dni" id="dni" placeholder="DNI" required>
+                 <label class="sr-only" for="email">Email</label><input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
+                <label class="sr-only" for="nombre">Nombre</label><input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <label class="sr-only" for="apellido">Apellido</label><input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
+                <label class="sr-only" for="cp">Código postal</label><input class="form-control" type="number" name="cp" id="cp" placeholder="Código postal" required>
                 <label for="envio">Envío a mi domicilio</label>
-                <input type="radio" id="envio" name="envio" value="si"><br>
+                <input type="radio" id="envio" name="envio" value="si" required><br>
                 <label for="no_envio">Recoger en la estación</label>
-                <input type="radio" id="no_envio" name="envio" value="no"><br>
+                <input type="radio" id="no_envio" name="envio" value="no" required><br>
             <fieldset class="sr-only dire">
-                <label class="sr-only" for="direccion">Inserta tu dirección</label><input class="form-control" type="text" name="direccion" id="direccion" placeholder="Dirección">
-                <label class="sr-only" for="telefono">Teléfono</label><input class="form-control" type="number" name="telefono" id="telefono" placeholder="Teléfono">
+                <label class="sr-only" for="direccion">Inserta tu dirección</label><input class="form-control" type="text" name="direccion" id="direccion" placeholder="Dirección" required>
+                <label class="sr-only" for="telefono">Teléfono</label><input class="form-control" type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
             </fieldset>
                 <div class="cincuenta btn btn-lg btn-primary btn-block">
                 <label  for="forfait">Tengo forfait</label>
-                <input class="sr-only" type="radio" id="forfait" name="forfait" value="si">
+                <input class="sr-only" type="radio" id="forfait" name="forfait" value="si" required>
                 </div>
                 <div class="cincuenta btn btn-lg btn-primary btn-block">
                 <label for="no_forfait">No tengo forfait</label>
-                <input class="sr-only" type="radio" id="no_forfait" name="forfait" value="no">
+                <input class="sr-only" type="radio" id="no_forfait" name="forfait" value="no" required>
                 </div>
             <fieldset class="sr-only forfi">
-                    <label class="sr-only" for="numero_forfait">Inserta tu forfait</label> <input class="form-control" type="number" id="numero_forfait" name="numero_forfait" placeholder="Inserta tu forfait">
+                    <label class="sr-only" for="numero_forfait">Inserta tu forfait</label> <input class="form-control" type="number" id="numero_forfait" name="numero_forfait" placeholder="Inserta tu forfait" required>
             </fieldset>
+            <input type="submit" class="sub btn btn-lg btn-primary btn-block" value="Continuar"> 
             </form>
          </div> 
-         <a class="btn btn-lg btn-primary btn-block" href="datos.php">Continuar</a> 
      </div>
      
      
