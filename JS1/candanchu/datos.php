@@ -20,9 +20,9 @@
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script>
         $(document).ready(function(){
-            $("#formulario").validate({
-                errorContainer: ".error",
-                focusCleanup: true,
+            
+        $(".sub").click(function(){ 
+            var validacion = $("#formulario").validate({
                 errorClass: "invalid",
                 validClass: "success",
                 onkeyup: false,
@@ -36,23 +36,55 @@
                         number: true,
                         rangelength: [5]
                     },
+                    telefono: {
+                        required: true,
+                        number: true,
+                        rangelength: [9]
+                    }
                     
                 },
                 messages: {
-                    nombre: "Por favor especifica tu nombre",
-                    email : {
-                           required: "Por favor, inserta tu correo electrónico",
-                           email: "Tu correo debe de tener la esructura nombre@dominio.com"
+                    nombre: "Especifica tu nombre",
+                    dni: {
+                        required: "Tu DNI es necesario",
+                        dni     : "Tienes que introducir un DNI válido",
                     },
+                    email : {
+                        required: "Inserta tu correo electrónico",
+                        email   : "Tu correo debe de tener la esructura nombre@dominio.extension"
+                    },
+                    telefono: "Introduce tu teléfono",    
                     cp:{
                         rangelength: jQuery.validator.format("Tienes que introducir {0} caracteres")
-                    }
-                }
+                    },
+                    envio: {
+                        depends: function(element) {
+                            return $(".campos_direccion").addClass("invalid");
+                        }
+                    },
+                },
             });
+                if($("#envio").hasClass(".invalid")){
+                    $(".campo_direccion").addClass("invalid");
+                }
+         });   
+                
+               
+            //$(".sub").click(function(){
+                
+               //$.each(validacion, function(key, element) {
+             //      console.log(key, element);
+             //   });  
+           // });
+            
+            
             $("[name=forfait]").click(function(){
                     $(".forfi").removeClass("sr-only");
+                    $(".campos_direccion").removeClass("sr-only");
+                    $(".campos_direccion").addClass("sr-only");
                 if($(this).val()=="no"){
                     $(".forfi").addClass("sr-only");
+                    $(".campos_direccion").removeClass("sr-only");
                 }
             })
             $("[name=envio]").click(function(){
@@ -158,6 +190,12 @@
             border: 3px solid indianred;
         }
         label.invalid{
+            /*display: none !important;*/
+            border: none;
+            font-size: 10px;
+            display: inline;
+        }
+        #forfait-error, #envio-error{
             display: none !important;
         }
     </style>
@@ -184,15 +222,17 @@
                  <label class="sr-only" for="email">Email</label><input class="form-control" type="email" name="email" id="email" placeholder="Email" required>
                 <label class="sr-only" for="nombre">Nombre</label><input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                 <label class="sr-only" for="apellido">Apellido</label><input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellidos" required>
-                <label class="sr-only" for="cp">Código postal</label><input class="form-control" type="number" name="cp" id="cp" placeholder="Código postal" required>
-                <label for="envio">Envío a mi domicilio</label>
-                <input type="radio" id="envio" name="envio" value="si" required><br>
-                <label for="no_envio">Recoger en la estación</label>
-                <input type="radio" id="no_envio" name="envio" value="no" required><br>
+                <label class="sr-only" for="cp">Código postal</label><input class="form-control" type="text" name="cp" id="cp" placeholder="Código postal" required>
+            <div class="campos_direccion">
+                <label for="envio" class="form-inline h4">Envío a mi domicilio</label>
+                <input class="radio-inline" type="radio" id="envio" name="envio" value="si" required>
+                <label for="no_envio" class="form-inline h4">Recoger en la estación</label>
+                <input class="radio-inline" type="radio" id="no_envio" name="envio" value="no" required>
             <fieldset class="sr-only dire">
                 <label class="sr-only" for="direccion">Inserta tu dirección</label><input class="form-control" type="text" name="direccion" id="direccion" placeholder="Dirección" required>
                 <label class="sr-only" for="telefono">Teléfono</label><input class="form-control" type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
             </fieldset>
+            </div>      
                 <div class="cincuenta btn btn-lg btn-primary btn-block">
                 <label  for="forfait">Tengo forfait</label>
                 <input class="sr-only" type="radio" id="forfait" name="forfait" value="si" required>
@@ -202,12 +242,13 @@
                 <input class="sr-only" type="radio" id="no_forfait" name="forfait" value="no" required>
                 </div>
             <fieldset class="sr-only forfi">
-                    <label class="sr-only" for="numero_forfait">Inserta tu forfait</label> <input class="form-control" type="number" id="numero_forfait" name="numero_forfait" placeholder="Inserta tu forfait" required>
+                    <label class="sr-only" for="numero_forfait">Inserta tu forfait</label> <input class="form-control" type="text" id="numero_forfait" name="numero_forfait" placeholder="Inserta tu forfait" required>
             </fieldset>
             <input type="submit" class="sub btn btn-lg btn-primary btn-block" value="Continuar"> 
             </form>
          </div> 
      </div>
+     <div class=errores></div>
      
      
      
