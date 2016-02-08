@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Datos</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="http://cdn.imnjb.me/libs/jquery.cookiecuttr/1.0/cookiecuttr.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/jquery.fancybox.css">    
-    <link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
-    <link rel="stylesheet" href="css/jquery.fancybox-thumbs.css">
-    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="js/jquery-2.2.0.min.js"></script>
     <script src="js/js.cookie.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/jquery.fancybox.js"></script>
@@ -20,39 +15,30 @@
     <script src="js/jquery.fancybox-thumbs.js"></script>
     <script>
         $(document).ready(function(){
-            var validacion = $('#formulario').validate({
+            $('#formulario').validate({
                 errorClass: "invalid",
-                validClass: "success",
-                invalidHandler: 
-                    function(event, validator) {
-                        var envio = validator.element("#envio");
-                    if(envio == false){
-                        $(".campos_direccion").addClass("invalid");
-                    }else if(envio == true){
-                        $(".campos_direccion").addClass("success");
-                    }
-                        var forfait = validator.element("#envio");
-                    if(forfait == false){
-                        $(".campos_forfait").addClass("invalid");
-                    }else if(forfait == true){
-                        $(".campos_forfait").addClass("success");
-                    }    
-                }, 
+                validClass: "success",  
                 rules: {
                     dni: {
                         required: true,
-                        rangelength: [9]
+                        rangelength: [9, 9]
                     },
                     cp: {
                         required: true,
-                        number: true,
-                        rangelength: [5]
+                        digits: true,
+                        rangelength: [5, 5]
                     },
                     telefono: {
                         required: true,
-                        number: true,
-                        rangelength: [9]
-                    }
+                        digits: true,
+                        rangelength: [9, 9]
+                    },
+                    forfait: {
+                        required: true,
+                    },
+                    direccion: {
+                        required: true,
+                    },
                 },
                 messages: {
                     nombre: "Especifica tu nombre",
@@ -66,13 +52,70 @@
                     },
                     telefono: "Introduce tu teléfono",    
                     cp:{
-                        rangelength: jQuery.validator.format("Tienes que introducir {0} caracteres")
+                        required: "Inserta tu código postal",
+                        rangelength: jQuery.validator.format("Tienes que introducir 5 caracteres")
                     },
+                    forfait: "Inserta tu forfait",
+                    direccion: "Inserta tu dirección",
+                    apellido: "Inserta tus apellidos"
                 },
+                invalidHandler:  
+                    function(event, validator) {   
+                        var envio = validator.element("[name=envio]");
+                        if(envio == false){
+                            $(".campos_direccion").addClass("invalid");
+                        }else{
+                            $(".campos_direccion").addClass("success");
+                        };
+                        var forfait = validator.element("[name=forfait]");
+                        if(forfait == false){
+                            $(".cincuenta").addClass("error");
+                        }else{
+                            if($("#forfait").is(":checked")){
+                                $(".forfi1").addClass("bien");
+                            }else if($("#no_forfait").is(":checked")){
+                                $(".forfi2").addClass("bien");
+                            }
+                        }
+                        validator.element("#dni");
+                        validator.element("#cp");
+                        validator.element("#email");
+                        validator.element("#nombre");
+                        validator.element("#apellido");
+                    }, 
             });
-            
-            
-        
+                var direc  = $(".campos_direccion input");
+                $(direc).click(function() {
+                    var inital = direc.is(":checked");
+                    if(inital == true){
+                        $(".campos_direccion").removeClass("invalid");
+                        $(".campos_direccion").removeClass("success");                        
+                        $(".campos_direccion").addClass("success");                            
+                    }else{
+                        $(".campos_direccion").removeClass("success");
+                        $(".campos_direccion").removeClass("invalid");
+                        $(".campos_direccion").addClass("invalid");
+                    }
+                });
+                var forf  = $(".campos_forfait input");
+                $(forf).click(function() {
+                    var inital = forf.is(":checked");
+                    if(inital == true){
+                        if($("#forfait").is(":checked")){
+                            $(".forfi1").removeClass("error");    
+                            $(".forfi1").removeClass("bien");
+                            $(".forfi2").removeClass("error");    
+                            $(".forfi2").removeClass("bien");                            
+                            $(".forfi1").addClass("bien");
+                        }else if($("#no_forfait").is(":checked")){
+                            $(".forfi2").removeClass("error");    
+                            $(".forfi2").removeClass("bien");
+                            $(".forfi1").removeClass("error");    
+                            $(".forfi1").removeClass("bien");                        
+                            $(".forfi2").addClass("bien");
+                        }
+                    }
+                });            
             $("[name=forfait]").click(function(){
                     $(".forfi").removeClass("sr-only");
                     $(".campos_direccion").removeClass("sr-only");
@@ -92,12 +135,7 @@
             $(".fianza").after("<span>: "+6+" euros</span><br>");
             $(".total").after("<span>: "+(parseInt(Cookies.get('precio'))+6)+"euros</span><br>");
         });       
-        /*invalidHandler: function(event, validator) {
-                    var envio = validacion.element("#envio");
-                    $(".campos_direccion").addClass("invalid");
-                },
-                
-                */
+
     </script>
     <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent-->
 <script type="text/javascript">
@@ -106,7 +144,6 @@
 
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 <!-- End Cookie Consent plugin -->
-
     <style>
         .container-fluid{
             background-image: url(http://assets.rollingstone.com/assets/1972/article/the-star-spangled-powder-19720817/181004/large_rect/1421278397/1401x788-468725721.jpg);
@@ -120,7 +157,7 @@
             display: block;
             width: 90%;   
             background-color: rgba(240,240,240,0.5);
-            height: 1000px;
+            height: 580px;
         }
         .candanchu2{
             margin: 0 auto;
@@ -203,6 +240,12 @@
             width: 50%;
             margin: 0 auto;
         }
+        .error{
+            background-color: indianred;
+        }
+        .bien{
+            background-color: mediumspringgreen;
+        }
     </style>
 </head>
 <body>
@@ -242,11 +285,11 @@
             </fieldset>
             </div> 
             <div class="campos_forfait">     
-                <div class="cincuenta btn btn-lg btn-primary btn-block">
+                <div class="cincuenta btn btn-lg btn-primary btn-block forfi1">
                 <label  for="forfait">Tengo forfait</label>
                 <input class="sr-only" type="radio" id="forfait" name="forfait" value="si" required>
                 </div>
-                <div class="cincuenta btn btn-lg btn-primary btn-block">
+                <div class="cincuenta btn btn-lg btn-primary btn-block forfi2">
                 <label for="no_forfait">No tengo forfait</label>
                 <input class="sr-only" type="radio" id="no_forfait" name="forfait" value="no" required>
                 </div>
@@ -258,15 +301,10 @@
             </form>
          </div> 
      </div>
-     <div class=errores></div>
-     
-     
-     
-
 </div>
 
- <footer>
+<footer>
      
- </footer>
-  </body>
+</footer>
+</body>
 </html>
