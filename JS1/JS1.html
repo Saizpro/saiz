@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Suma</title>
+    <meta name="description" content="Transforma dos inputs en Enteros y los suma.">
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
         $(document).ready(function(){
-        $("#num1, #num2").change(function(){
-            var num1 = $("#num1").val();
-            var num2 = $("#num2").val();
-            var res  = parseInt(num1) + parseInt(num2);
-            $("#resultado").val(res);
+            $("#num1, #num2").change(function(){
+                var num1 = $("#num1").val();
+                var num2 = $("#num2").val();
+                var res  = parseInt(num1) + parseInt(num2);
+                $("#resultado").val(res);
+            });
         });
-    });
     </script>
 </head>
 <body>
